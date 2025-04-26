@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.toddsgotapen.taglauncher</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>E191E513-85C7-4A26-AD1E-CAF770852D75</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>621320B2-7D99-4FD0-B62D-95641A03A8DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Todd Clarke</string>
+	<key>description</key>
+	<string>Launch any Tagging Workflows (Mail, Finder, Browse, Tasks)</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Tag Launcher</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>tl</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>cat &lt;&lt;EOF
+{
+  "items": [
+    {
+      "title": "Mail Tags",
+      "subtitle": "Tag, search &amp; manage Apple Mail",
+      "arg": "mail",
+      "autocomplete": "Mail Tags",
+      "variables": { "workflow": "mail" }
+    },
+    {
+      "title": "Browser Tags",
+      "subtitle": "Tag &amp; restore browser tabs",
+      "arg": "browser",
+      "autocomplete": "Browser Tags",
+      "variables": { "workflow": "browser" }
+    },
+    {
+      "title": "File Tags",
+      "subtitle": "Tag &amp; search local files",
+      "arg": "finder",
+      "autocomplete": "Finder Tags",
+      "variables": { "workflow": "finder" }
+    },
+    {
+      "title": "Task Tags",
+      "subtitle": "Tag, complete &amp; manage tasks",
+      "arg": "todo",
+      "autocomplete": "To-Do Tags",
+      "variables": { "workflow": "todo" }
+    }
+  ]
+}
+EOF
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Launch Mail, Finder, Browse or Tasks tagging workflows</string>
+				<key>title</key>
+				<string>Launch any Tagging Workflow</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E191E513-85C7-4A26-AD1E-CAF770852D75</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>case "{query}" in
+  mail)
+    osascript -e 'tell application "Alfred 5" to search "mt"'
+    ;;
+  browser)
+    osascript -e 'tell application "Alfred 5" to search "bt"'
+    ;;
+  finder)
+    osascript -e 'tell application "Alfred 5" to search "ft"'
+    ;;
+  todo)
+    osascript -e 'tell application "Alfred 5" to search "tt"'
+    ;;
+esac</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>621320B2-7D99-4FD0-B62D-95641A03A8DD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>621320B2-7D99-4FD0-B62D-95641A03A8DD</key>
+		<dict>
+			<key>xpos</key>
+			<real>305</real>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
+		<key>E191E513-85C7-4A26-AD1E-CAF770852D75</key>
+		<dict>
+			<key>xpos</key>
+			<real>95</real>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>v.3.2.3</string>
+	<key>webaddress</key>
+	<string>com.toddsgotapen.taglauncher</string>
+</dict>
+</plist>

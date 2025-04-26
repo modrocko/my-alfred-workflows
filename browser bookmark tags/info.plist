@@ -1,0 +1,1717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.toddsgotapen.browserbookmarktags</string>
+	<key>connections</key>
+	<dict>
+		<key>00E55C68-15F1-4376-8AD0-253BE9858383</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1589966D-BE7A-47C5-A69D-C4FCA6EF0873</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string>fuckkkcccc</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>984DA37F-BF3B-45F1-A5FA-8E8996D03077</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Edit the tags file</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CA813046-168B-4412-AD39-542A4995158E</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open the data folder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>DE787227-1075-4068-9C3C-433204BF6667</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Open the workflow folder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>107600AA-A4F2-41AB-8844-EBE02172B1DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A0BD6222-F980-4765-A09A-D7305B416F4C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1082B418-892E-4253-BC94-2FF6D63E7F32</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>91359DC5-1A87-43F5-BFFE-C62195FE5697</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2BDECCE9-4FB0-4B8F-BDAB-1371B62CBF24</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6FD8241-1FA9-4562-9CE0-D4ED05EFDF2B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>32D46C9E-9245-40E7-908F-A17BB53156D8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>49DA4361-9584-46E8-B8B9-ED84DFAB911A</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F3467522-77B8-4172-A6E6-3D97DC606EE9</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>61C5D0E8-A3F0-4FDB-AAAF-B301BEBA903D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>853321A0-4279-4CA0-86BA-6C7A90AF5D02</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3E651397-1DCD-4FF6-9FFC-492BCF819D8A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F8C513B3-74C3-46FF-96B5-6C341D644E05</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F14BC14-0702-4E1B-AE95-2B56E296D33D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>44DBFD2D-BD05-4D2B-8EE9-7FA797F576FF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>44DBFD2D-BD05-4D2B-8EE9-7FA797F576FF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DF575EFD-1419-4AA2-8665-DD2B2280291D</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F8C513B3-74C3-46FF-96B5-6C341D644E05</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E651397-1DCD-4FF6-9FFC-492BCF819D8A</string>
+				<key>modifiers</key>
+				<integer>393216</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8B7C7CB9-D059-4167-B4BA-1B074C80CD46</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F50B6C91-3354-406F-B196-86395F428797</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>107600AA-A4F2-41AB-8844-EBE02172B1DD</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>468A0F93-9B74-4748-B06A-CCC8704A3515</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D147CAC8-82B8-46B0-8068-CC8AC918CD18</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>49DA4361-9584-46E8-B8B9-ED84DFAB911A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1082B418-892E-4253-BC94-2FF6D63E7F32</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>61C5D0E8-A3F0-4FDB-AAAF-B301BEBA903D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2C98A8B3-07A5-4E28-9531-C2E6604CE390</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>734663F8-2829-4A06-B256-B89B6FF3CF5F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>32D46C9E-9245-40E7-908F-A17BB53156D8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8B7C7CB9-D059-4167-B4BA-1B074C80CD46</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>49DA4361-9584-46E8-B8B9-ED84DFAB911A</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F3467522-77B8-4172-A6E6-3D97DC606EE9</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>61C5D0E8-A3F0-4FDB-AAAF-B301BEBA903D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>853321A0-4279-4CA0-86BA-6C7A90AF5D02</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>91359DC5-1A87-43F5-BFFE-C62195FE5697</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>54C42F4C-0D3F-4100-A5AE-4241CB24F290</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A0BD6222-F980-4765-A09A-D7305B416F4C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DCC6DAC3-1B6F-4667-8781-CF16E9FEC3F6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A73575EA-8C0D-46E5-B4FB-492B4A4A7B94</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6FD8241-1FA9-4562-9CE0-D4ED05EFDF2B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2BDECCE9-4FB0-4B8F-BDAB-1371B62CBF24</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reset data files</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D147CAC8-82B8-46B0-8068-CC8AC918CD18</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F8C513B3-74C3-46FF-96B5-6C341D644E05</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DC659001-E507-47D9-9C11-C76E1BCA8C99</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8B7C7CB9-D059-4167-B4BA-1B074C80CD46</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F3467522-77B8-4172-A6E6-3D97DC606EE9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2C98A8B3-07A5-4E28-9531-C2E6604CE390</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FCBF77AB-95F2-447D-AF2B-DAA4374D0226</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>44DBFD2D-BD05-4D2B-8EE9-7FA797F576FF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Todd Clarke</string>
+	<key>description</key>
+	<string>Assign &amp; manage browser bookmark tags</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Browser Bookmark Tags</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import os
+import sys
+import json
+import subprocess
+
+tag = sys.argv[1].strip()
+workflow_dir = os.environ["alfred_workflow_data"]
+db_path = os.path.join(workflow_dir, "bookmarks.json")
+
+with open(db_path, "r") as f:
+    bookmarks = json.load(f)
+
+urls = [bm["url"] for bm in bookmarks if tag in bm.get("tags", [])]
+
+for url in urls:
+    subprocess.run(["open", url])</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>9</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DF575EFD-1419-4AA2-8665-DD2B2280291D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/tag_browser_tabs.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F8C513B3-74C3-46FF-96B5-6C341D644E05</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>bta</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/specify_tag.py "{query}"
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Tag the current browser tab</string>
+				<key>title</key>
+				<string>Tag browser tab</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D147CAC8-82B8-46B0-8068-CC8AC918CD18</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>if [[ "$1" == "reassign" ]]; then
+  echo "url=$url"
+  echo "old_tag=$old_tag"
+else
+  echo ""
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>49DA4361-9584-46E8-B8B9-ED84DFAB911A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/reassign_tag_to_bookmark.py "{query}"
+
+osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in workflow "com.toddsgotapen.browserbookmarktags"'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>54C42F4C-0D3F-4100-A5AE-4241CB24F290</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>newtag</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Type new tag to assign</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>91359DC5-1A87-43F5-BFFE-C62195FE5697</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>11</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>B</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>468A0F93-9B74-4748-B06A-CCC8704A3515</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>1082B418-892E-4253-BC94-2FF6D63E7F32</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key></key>
+					<string></string>
+					<key>tag</key>
+					<string>{var:tag}</string>
+					<key>url</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>F3467522-77B8-4172-A6E6-3D97DC606EE9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>3E651397-1DCD-4FF6-9FFC-492BCF819D8A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>11</integer>
+				<key>hotmod</key>
+				<integer>786432</integer>
+				<key>hotstring</key>
+				<string>B</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>FCBF77AB-95F2-447D-AF2B-DAA4374D0226</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+import subprocess
+
+url = sys.argv[1].strip()
+if url:
+    subprocess.run(["open", url])</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>9</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>61C5D0E8-A3F0-4FDB-AAAF-B301BEBA903D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/open_bookmark_and_remove_tag.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2C98A8B3-07A5-4E28-9531-C2E6604CE390</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading tagged bookmarks...</string>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/list_bookmarks_for_tag.py "{query}"
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8B7C7CB9-D059-4167-B4BA-1B074C80CD46</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>btl</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading tags...</string>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/list_tags.py "{query}"
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Show bookmarks grouped by tag</string>
+				<key>title</key>
+				<string>Show bookmarked pages</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>44DBFD2D-BD05-4D2B-8EE9-7FA797F576FF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/remove_bookmark.py "{query}"
+
+# extract the tag part after '||'
+input="{query}"
+tag="${input##*||}"
+
+# trigger refresh if tag exists
+[ -n "$tag" ] &amp;&amp; osascript -e 'tell application "Alfred 5" to run trigger "refresh_file_list" in workflow "com.toddsgotapen.browserbookmarktags" with argument "'"$tag"'"'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>853321A0-4279-4CA0-86BA-6C7A90AF5D02</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_file_list</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>DC659001-E507-47D9-9C11-C76E1BCA8C99</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/delete_tag.py "{query}"
+
+osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in workflow "com.toddsgotapen.browserbookmarktags" with argument "'"$tag"'"'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F50B6C91-3354-406F-B196-86395F428797</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_tags_list</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>3F14BC14-0702-4E1B-AE95-2B56E296D33D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>11</integer>
+				<key>hotmod</key>
+				<integer>1835008</integer>
+				<key>hotstring</key>
+				<string>B</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>734663F8-2829-4A06-B256-B89B6FF3CF5F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>rename</string>
+				<key>subtext</key>
+				<string>Rename this tag</string>
+				<key>text</key>
+				<string>Rename tag: {var:old_tag}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>107600AA-A4F2-41AB-8844-EBE02172B1DD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/rename_tag.py "{query}"
+
+osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in workflow "com.toddsgotapen.browserbookmarktags"'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DCC6DAC3-1B6F-4667-8781-CF16E9FEC3F6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>old_tag</key>
+					<string>{var:old_tag}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>A0BD6222-F980-4765-A09A-D7305B416F4C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>bts</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching emails...</string>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/list_bookmarks_for_search.py "{query}"
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search by url or title</string>
+				<key>title</key>
+				<string>Search tagged bookmarks</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>32D46C9E-9245-40E7-908F-A17BB53156D8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -a TextEdit "$alfred_workflow_data/bookmarks.json"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1589966D-BE7A-47C5-A69D-C4FCA6EF0873</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:bt init</string>
+				<key>subtext</key>
+				<string>↵ to intialize workflow ∙ ⌘↵ to reset data files</string>
+				<key>text</key>
+				<string>Initialize (or reset) workflow</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A73575EA-8C0D-46E5-B4FB-492B4A4A7B94</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import os
+import json
+import subprocess
+
+workflow_dir = os.environ["alfred_workflow_data"]
+bookmarks_path = os.path.join(workflow_dir, "bookmarks.json")
+default_tags_path = os.path.join(workflow_dir, "default-tags.json")
+title = os.environ["alfred_workflow_name"]
+
+# Check if everything already exists
+if os.path.exists(workflow_dir) and os.path.exists(bookmarks_path) and os.path.exists(default_tags_path):
+    subprocess.run([
+        "osascript", "-e",
+        f'display notification "Setup skipped — files already exist." with title "{title}"'
+    ])
+    exit(0)
+
+# Otherwise → do setup
+os.makedirs(workflow_dir, exist_ok=True)
+
+# Create bookmarks.json
+if not os.path.exists(bookmarks_path):
+    with open(bookmarks_path, 'w') as f:
+        json.dump([], f, indent=2)
+
+# Create default-tags.json with hardcoded tags
+if not os.path.exists(default_tags_path):
+    default_tags_list = ["@read", "@research", "@shop", "@projects"]
+    with open(default_tags_path, 'w') as f:
+        json.dump(default_tags_list, f, indent=2)
+
+# Notify success
+subprocess.run([
+    "osascript", "-e",
+    f'display notification "Setup complete — JSON files created." with title "{title}"'
+])</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>9</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E6FD8241-1FA9-4562-9CE0-D4ED05EFDF2B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -a TextEdit "$alfred_workflow_data/default-tags.json"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>984DA37F-BF3B-45F1-A5FA-8E8996D03077</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:bt edit</string>
+				<key>subtext</key>
+				<string>↵ Edit bookmarks file ∙ ⌘ ↵ Edit tags file ∙ ⌥↵ Open data folder ∙ ⌃↵ Open workflow folder</string>
+				<key>text</key>
+				<string>Edit data files directly</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>00E55C68-15F1-4376-8AD0-253BE9858383</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open "$alfred_workflow_data"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CA813046-168B-4412-AD39-542A4995158E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import os
+
+workflow_dir = os.environ["alfred_workflow_data"]
+bookmarks_path = os.path.join(workflow_dir, "bookmarks.json")
+default_tags_path = os.path.join(workflow_dir, "default-tags.json")
+
+# Delete existing files if they exist
+if os.path.exists(bookmarks_path):
+    os.remove(bookmarks_path)
+
+if os.path.exists(default_tags_path):
+    os.remove(default_tags_path)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>9</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2BDECCE9-4FB0-4B8F-BDAB-1371B62CBF24</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open "$alfred_workflow_directory"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DE787227-1075-4068-9C3C-433204BF6667</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Browser Bookmark Tags
+
+A simple system for tagging, finding and managing tags for your browser tabs (web pages)
+
+✓  Tag any or many browser tabs however you want — instantly  
+✓  Organize, find &amp; open any or many browse tabs — instantly  
+✓  Specify default tags or type your own — instantly  
+✓  Keep your browser bookmark sanity — always
+
+* `:bt init` — Intialize workflow before using 
+* `bt` — View top level functions
+* `bta` — Assign a tag to one or all tabs within frontmost browser window
+* `btl` — List all web pages grouped by tag
+* `bts` — Search through all tagged web pages
+* `:bt edit` — Edit data files (if needed) and open underlying folders
+
+❗Select one of the supported browsers in the Configure Workflow to use this workflow
+
+[See documentation](https://github.com/modrocko/browser-bookmark-tags-alfred-workflow)</string>
+	<key>uidata</key>
+	<dict>
+		<key>00E55C68-15F1-4376-8AD0-253BE9858383</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<real>540</real>
+			<key>ypos</key>
+			<real>1160</real>
+		</dict>
+		<key>107600AA-A4F2-41AB-8844-EBE02172B1DD</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>rename tag</string>
+			<key>xpos</key>
+			<real>470</real>
+			<key>ypos</key>
+			<real>750</real>
+		</dict>
+		<key>1082B418-892E-4253-BC94-2FF6D63E7F32</key>
+		<dict>
+			<key>xpos</key>
+			<real>920</real>
+			<key>ypos</key>
+			<real>210</real>
+		</dict>
+		<key>1589966D-BE7A-47C5-A69D-C4FCA6EF0873</key>
+		<dict>
+			<key>note</key>
+			<string>edit email file</string>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>1005</real>
+		</dict>
+		<key>2BDECCE9-4FB0-4B8F-BDAB-1371B62CBF24</key>
+		<dict>
+			<key>note</key>
+			<string>run reset</string>
+			<key>xpos</key>
+			<real>210</real>
+			<key>ypos</key>
+			<real>1330</real>
+		</dict>
+		<key>2C98A8B3-07A5-4E28-9531-C2E6604CE390</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>open bookmark &amp; remove tag</string>
+			<key>xpos</key>
+			<real>1020</real>
+			<key>ypos</key>
+			<real>405</real>
+		</dict>
+		<key>32D46C9E-9245-40E7-908F-A17BB53156D8</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>list bookmarks for search</string>
+			<key>xpos</key>
+			<real>470</real>
+			<key>ypos</key>
+			<real>905</real>
+		</dict>
+		<key>3E651397-1DCD-4FF6-9FFC-492BCF819D8A</key>
+		<dict>
+			<key>xpos</key>
+			<real>515</real>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
+		<key>3F14BC14-0702-4E1B-AE95-2B56E296D33D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>580</real>
+		</dict>
+		<key>44DBFD2D-BD05-4D2B-8EE9-7FA797F576FF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>list tags</string>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>405</real>
+		</dict>
+		<key>468A0F93-9B74-4748-B06A-CCC8704A3515</key>
+		<dict>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>49DA4361-9584-46E8-B8B9-ED84DFAB911A</key>
+		<dict>
+			<key>note</key>
+			<string>set bookmark tag vars</string>
+			<key>xpos</key>
+			<real>755</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>54C42F4C-0D3F-4100-A5AE-4241CB24F290</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>reassign tag to bookmark</string>
+			<key>xpos</key>
+			<real>1230</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>61C5D0E8-A3F0-4FDB-AAAF-B301BEBA903D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>open selected bookmark</string>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>405</real>
+		</dict>
+		<key>734663F8-2829-4A06-B256-B89B6FF3CF5F</key>
+		<dict>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>750</real>
+		</dict>
+		<key>853321A0-4279-4CA0-86BA-6C7A90AF5D02</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>remove bookmark from tag</string>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>575</real>
+		</dict>
+		<key>8B7C7CB9-D059-4167-B4BA-1B074C80CD46</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>list bookmarks for tag</string>
+			<key>xpos</key>
+			<real>465</real>
+			<key>ypos</key>
+			<real>405</real>
+		</dict>
+		<key>91359DC5-1A87-43F5-BFFE-C62195FE5697</key>
+		<dict>
+			<key>note</key>
+			<string>prompt for new tag</string>
+			<key>xpos</key>
+			<real>1015</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>984DA37F-BF3B-45F1-A5FA-8E8996D03077</key>
+		<dict>
+			<key>note</key>
+			<string>edit tags file</string>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>1160</real>
+		</dict>
+		<key>A0BD6222-F980-4765-A09A-D7305B416F4C</key>
+		<dict>
+			<key>xpos</key>
+			<real>685</real>
+			<key>ypos</key>
+			<real>815</real>
+		</dict>
+		<key>A73575EA-8C0D-46E5-B4FB-492B4A4A7B94</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>invoke init or reset</string>
+			<key>xpos</key>
+			<real>95</real>
+			<key>ypos</key>
+			<real>1160</real>
+		</dict>
+		<key>CA813046-168B-4412-AD39-542A4995158E</key>
+		<dict>
+			<key>note</key>
+			<string>open data folder</string>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>1305</real>
+		</dict>
+		<key>D147CAC8-82B8-46B0-8068-CC8AC918CD18</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>specify tag</string>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>DC659001-E507-47D9-9C11-C76E1BCA8C99</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>235</real>
+			<key>ypos</key>
+			<real>580</real>
+		</dict>
+		<key>DCC6DAC3-1B6F-4667-8781-CF16E9FEC3F6</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>rename tag</string>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>750</real>
+		</dict>
+		<key>DE787227-1075-4068-9C3C-433204BF6667</key>
+		<dict>
+			<key>note</key>
+			<string>open workflow folder</string>
+			<key>xpos</key>
+			<real>765</real>
+			<key>ypos</key>
+			<real>1455</real>
+		</dict>
+		<key>DF575EFD-1419-4AA2-8665-DD2B2280291D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>open all browser tabs</string>
+			<key>xpos</key>
+			<real>465</real>
+			<key>ypos</key>
+			<real>30</real>
+		</dict>
+		<key>E6FD8241-1FA9-4562-9CE0-D4ED05EFDF2B</key>
+		<dict>
+			<key>note</key>
+			<string>run init</string>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>1160</real>
+		</dict>
+		<key>F3467522-77B8-4172-A6E6-3D97DC606EE9</key>
+		<dict>
+			<key>xpos</key>
+			<real>795</real>
+			<key>ypos</key>
+			<real>330</real>
+		</dict>
+		<key>F50B6C91-3354-406F-B196-86395F428797</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>delete tag</string>
+			<key>xpos</key>
+			<real>465</real>
+			<key>ypos</key>
+			<real>580</real>
+		</dict>
+		<key>F8C513B3-74C3-46FF-96B5-6C341D644E05</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>tag browser tabs</string>
+			<key>xpos</key>
+			<real>545</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>FCBF77AB-95F2-447D-AF2B-DAA4374D0226</key>
+		<dict>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>405</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>Brave Browser</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Chrome</string>
+						<string>Google Chrome</string>
+					</array>
+					<array>
+						<string>Brave</string>
+						<string>Brave Browser</string>
+					</array>
+					<array>
+						<string>Safari</string>
+						<string>Safari Browser</string>
+					</array>
+					<array>
+						<string>Arc</string>
+						<string>Arc Browser</string>
+					</array>
+					<array>
+						<string>Edge</string>
+						<string>Microsoft Edge Browser</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Select the browser to work with this workflow</string>
+			<key>label</key>
+			<string>Select browser</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>browser</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>3.2.3</string>
+	<key>webaddress</key>
+	<string>toddsgotapen.com</string>
+</dict>
+</plist>

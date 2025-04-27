@@ -1611,7 +1611,7 @@ A simple system for tagging, finding and managing tags for Apple Mail emails.
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>3.2.3</string>
+	<string>3.2.4</string>
 	<key>webaddress</key>
 	<string>toddsgotapen.com</string>
 </dict>

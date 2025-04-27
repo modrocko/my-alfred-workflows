@@ -176,7 +176,7 @@ esac</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>v.3.2.3</string>
+	<string>3.2.4</string>
 	<key>webaddress</key>
 	<string>com.toddsgotapen.taglauncher</string>
 </dict>

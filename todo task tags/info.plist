@@ -1067,6 +1067,27 @@ EOF</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
+				<string>:tt edit</string>
+				<key>subtext</key>
+				<string>↵ Edit data file ∙ ⌘ ↵ Edit tags file ∙ ⌥↵ Open data folder ∙ ⌃↵ Open workflow folder</string>
+				<key>text</key>
+				<string>Edit data files directly</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>FDECA79A-1F7E-4A4D-B12B-37E962CF2EDC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
 				<string>:tt init</string>
 				<key>subtext</key>
 				<string>↵ intialize workflow ∙ ⌘↵ reset data files</string>
@@ -1104,27 +1125,6 @@ EOF</string>
 			<string>CE260D9F-58E7-4C7C-825A-8C47B3105B66</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:tt export/import</string>
-				<key>subtext</key>
-				<string>⌘↵ export tasks ∙ ⌥↵ import tasks ∙ ⌃↩ edit tasks.md</string>
-				<key>text</key>
-				<string>Export/import</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A3E29133-C07A-42B7-AEBD-FDED9937BA3E</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1253,18 +1253,18 @@ EOF</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>:tt edit</string>
+				<string>:tt export/import</string>
 				<key>subtext</key>
-				<string>↵ Edit data file ∙ ⌘ ↵ Edit tags file ∙ ⌥↵ Open data folder ∙ ⌃↵ Open workflow folder</string>
+				<string>⌘↵ export tasks ∙ ⌥↵ import tasks ∙ ⌃↩ edit tasks.md</string>
 				<key>text</key>
-				<string>Edit data files directly</string>
+				<string>Export/import</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>FDECA79A-1F7E-4A4D-B12B-37E962CF2EDC</string>
+			<string>A3E29133-C07A-42B7-AEBD-FDED9937BA3E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1707,7 +1707,7 @@ A simple system for creating &amp; tagging to-do tasks
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>3.2.3</string>
+	<string>3.2.4</string>
 	<key>webaddress</key>
 	<string>toddsgotapen.com</string>
 </dict>

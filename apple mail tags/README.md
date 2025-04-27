@@ -14,7 +14,7 @@ Here're the main functions for this workflow
 
 ### Initialize workflow
 
-❗Type `:mt init` to run this operation to start using this workflow
+Initialize workflow before using workflow
 
 ![](assets/mt-init.png)     
 

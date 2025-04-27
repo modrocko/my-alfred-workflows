@@ -35,14 +35,22 @@ if query and query not in [t.lower() for t in all_tags]:
 # Build Alfred items
 items = [{
     "title": tag,
-    "subtitle": "↵ tag current tab  •  ⌘ tag all tabs",
+    "subtitle": "↵ tag tab  •  ⌘ tag tabs in front window •  ⌃ tag tabs across windows",
     "arg": tag,
-    "mods": {
+        "mods": {
         "cmd": {
             "arg": tag,
-            "subtitle": f"⌘↵ to tag all tabs with '{tag}'",
+            "subtitle": "⌘↵ to tag all tabs in front window",
             "variables": {
                 "tag_all_tabs": "1"
+            }
+        },
+        "ctrl": {
+            "arg": tag,
+            "subtitle": "⌃↵ to tag all tabs in all windows",
+            "variables": {
+                "tag_all_tabs": "1",
+                "tag_all_windows": "1"
             }
         }
     }

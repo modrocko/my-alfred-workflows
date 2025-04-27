@@ -6,18 +6,34 @@ import subprocess
 # Get tag
 tag = sys.argv[1].strip().replace("!", "❗")
 
-# Check if tagging all tabs
-tag_all_tabs = os.getenv("tag_all_tabs", "") == "1"
-
 # Resolve paths
 workflow_dir = os.environ["alfred_workflow_data"]
 db_path = os.path.join(workflow_dir, "bookmarks.json")
 notif_title = os.environ["alfred_workflow_name"]
 browser = os.environ["browser"]
 
+# Check if tagging all tabs or all windows
+tag_all_tabs = os.getenv("tag_all_tabs", "") == "1"
+tag_all_windows = os.getenv("tag_all_windows", "") == "1"
+
 # AppleScript to get tabs info
-# AppleScript to get tab(s) info
-if tag_all_tabs:
+if tag_all_windows:
+    script = f'''
+    tell application "{browser}"
+        if it is running and (count of windows) > 0 then
+            set output to ""
+            repeat with w in windows
+                repeat with t in tabs of w
+                    set tabTitle to title of t
+                    set tabURL to URL of t
+                    set output to output & tabTitle & "||" & tabURL & "%%"
+                end repeat
+            end repeat
+            return output
+        end if
+    end tell
+    '''
+elif tag_all_tabs:
     script = f'''
     tell application "{browser}"
         if it is running and (count of windows) > 0 then

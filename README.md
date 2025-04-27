@@ -14,7 +14,7 @@ Tag your Apple Mail messages straight from Alfred. No plug-ins. No flagged/unrea
 * **Remove** or **rename** tags
 * **Fully keyboard-driven**
 
-➥ [Learn more](https://github.com/modrocko/my-alfred-workflows/tree/main/apple mail tags) | [Download](https://github.com/modrocko/my-alfred-workflows/releases/latest)
+➥ [Learn more](https://github.com/modrocko/my-alfred-workflows/tree/main/apple%20mail%20tags) | [Download](https://github.com/modrocko/my-alfred-workflows/releases/latest)
 
 ## 📂 Finder File Tags
 
@@ -27,7 +27,7 @@ Tag any selected file(s) in Finder with Alfred. Perfect for gathering files by t
 * **Remove** tags from one or more files
 * **Rename** or manage default tags 
 
-➥ [Learn more](https://github.com/modrocko/my-alfred-workflows/tree/main/finder file tags) | [Download](https://github.com/modrocko/my-alfred-workflows/releases/latest)
+➥ [Learn more](https://github.com/modrocko/my-alfred-workflows/tree/main/finder%20file%20tags) | [Download](https://github.com/modrocko/my-alfred-workflows/releases/latest)
 
 ### 🌐 Browser Bookmark Tags
 
@@ -40,7 +40,7 @@ Tag your open browser tabs so you can reopen them later. Like bookmarks — but 
 * **Remove** or **rename** tags
 * **Save All Tabs** or **Restore All Tabs**
 
-➥ [Learn more](https://github.com/modrocko/my-alfred-workflows/tree/main/browser bookmark tags) | [Download](https://github.com/modrocko/my-alfred-workflows/releases/latest)
+➥ [Learn more](https://github.com/modrocko/my-alfred-workflows/tree/main/browser%20bookmark%20tags) | [Download](https://github.com/modrocko/my-alfred-workflows/releases/latest)
 
 ### ✏️ Todo Tasks Tags
 
@@ -53,5 +53,5 @@ Tag your open browser tabs so you can reopen them later. Like bookmarks — but 
 * **Manage** all your tasks and tags
 * **Search** & find any task(s) 
 
-➥ [Learn more](https://github.com/modrocko/my-alfred-workflows/tree/main/todo task tags) | [Download](https://github.com/modrocko/my-alfred-workflows/releases/latest)
+➥ [Learn more](https://github.com/modrocko/my-alfred-workflows/tree/main/todo%20task%20tags) | [Download](https://github.com/modrocko/my-alfred-workflows/releases/latest)
 

@@ -231,6 +231,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>ACD42117-7A8B-4EB1-8FCF-23DDFA7F82F4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FAA2D218-CF00-4A09-9D7B-7F37BF528118</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B44355C4-F768-48C3-94A8-AD4E814F1D44</key>
 		<array>
 			<dict>
@@ -437,30 +450,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cd "$alfred_workflow_directory"
-python3 scripts/create_task.py "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>7D62F91A-9E49-47B4-A552-10781949E9E3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -508,6 +497,94 @@ python3 scripts/specify_tag.py "{query}"
 			<string>FAA2D218-CF00-4A09-9D7B-7F37BF528118</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_tags_add</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>ACD42117-7A8B-4EB1-8FCF-23DDFA7F82F4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/create_task.py "{query}"
+
+osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_add" in workflow "com.toddsgotapen.todotasks"'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7D62F91A-9E49-47B4-A552-10781949E9E3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/delete_tag.py "{query}"
+
+osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in workflow "com.toddsgotapen.todotasks"'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4E9F4497-3A75-4D2B-8972-8D1A4D930B66</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>newtag</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Type new tag to assign</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>94FF0103-85EF-47C8-94F6-51CBEA82B38B</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -564,53 +641,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>cd "$alfred_workflow_directory"
-python3 scripts/delete_tag.py "{query}"
-
-osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in workflow "com.toddsgotapen.todotasks"'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>4E9F4497-3A75-4D2B-8972-8D1A4D930B66</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>newtag</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Type new tag to assign</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>94FF0103-85EF-47C8-94F6-51CBEA82B38B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -622,6 +652,21 @@ osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in 
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>CD0086C5-695C-4255-8E35-0A09617BB0D9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_tags_list</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>6625E652-68B1-4F84-BC56-87EE25ED99AF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -675,21 +720,6 @@ python3 scripts/list_tags.py "{query}"
 			<string>A89B6173-2679-49BA-95E0-F4C87C52BCB3</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>refresh_tags_list</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>6625E652-68B1-4F84-BC56-87EE25ED99AF</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -794,6 +824,21 @@ osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in 
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_task_list</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>A23BD921-1138-4887-932B-D078F558D218</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -839,21 +884,6 @@ python3 scripts/list_tasks_for_tag.py "{query}"
 			<string>D90DEC3B-968E-4424-9612-85B050646DF3</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>refresh_task_list</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>A23BD921-1138-4887-932B-D078F558D218</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -919,27 +949,6 @@ python3 scripts/update_task.py "$tag||$old_task||$new_task"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>:task update</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Enter updated task for this tag</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B44355C4-F768-48C3-94A8-AD4E814F1D44</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -987,6 +996,27 @@ python3 scripts/list_tasks_for_search.py "{query}"
 			<string>A1BD6EF9-23DE-443E-8C01-E4C6BAFF310D</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>:task update</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Enter updated task for this tag</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B44355C4-F768-48C3-94A8-AD4E814F1D44</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1085,27 +1115,6 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:tt init</string>
-				<key>subtext</key>
-				<string>↵ intialize workflow ∙ ⌘↵ reset data files</string>
-				<key>text</key>
-				<string>Initialize (or reset) workflow</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C060A21A-7D09-4061-9337-971C1600293C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1187,6 +1196,27 @@ subprocess.run([
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:tt export/import</string>
+				<key>subtext</key>
+				<string>⌘↵ export tasks ∙ ⌥↵ import tasks ∙ ⌃↩ edit tasks.md</string>
+				<key>text</key>
+				<string>Export/import</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A3E29133-C07A-42B7-AEBD-FDED9937BA3E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1253,18 +1283,18 @@ EOF</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>:tt export/import</string>
+				<string>:tt init</string>
 				<key>subtext</key>
-				<string>⌘↵ export tasks ∙ ⌥↵ import tasks ∙ ⌃↩ edit tasks.md</string>
+				<string>↵ intialize workflow ∙ ⌘↵ reset data files</string>
 				<key>text</key>
-				<string>Export/import</string>
+				<string>Initialize (or reset) workflow</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>A3E29133-C07A-42B7-AEBD-FDED9937BA3E</string>
+			<string>C060A21A-7D09-4061-9337-971C1600293C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1564,6 +1594,15 @@ A simple system for creating &amp; tagging to-do tasks
 			<real>250</real>
 			<key>ypos</key>
 			<real>425</real>
+		</dict>
+		<key>ACD42117-7A8B-4EB1-8FCF-23DDFA7F82F4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>45</real>
+			<key>ypos</key>
+			<real>175</real>
 		</dict>
 		<key>B44355C4-F768-48C3-94A8-AD4E814F1D44</key>
 		<dict>

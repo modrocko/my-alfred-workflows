@@ -3,6 +3,8 @@ import sys
 import json
 
 query = sys.argv[1].strip().lower()
+query = query.replace("!", "❗")
+
 workflow_dir = os.environ["alfred_workflow_data"]
 db_path = os.path.join(workflow_dir, "bookmarks.json")
 
@@ -21,7 +23,11 @@ for bm in bookmarks:
     tags_list = bm.get("tags", [])
     tag = tags_list[0] if tags_list else ""
 
-    if query in title.lower() or query in url.lower():
+    if (
+        query in title.lower()
+        or query in url.lower()
+        or any(query in t.lower() for t in tags_list)
+    ):
         results.append({
             "title": title,
             "subtitle": f"[{tag}] • {url}",

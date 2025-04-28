@@ -47,7 +47,7 @@ items = [{
         },
         "ctrl": {
             "arg": tag,
-            "subtitle": "⌃↵ to tag all tabs in all windows",
+            "subtitle": "⌃↵ to tag all tabs across all windows",
             "variables": {
                 "tag_all_tabs": "1",
                 "tag_all_windows": "1"

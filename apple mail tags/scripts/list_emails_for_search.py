@@ -22,7 +22,11 @@ for email in emails:
     tag = tags_list[0] if tags_list else ""
     message_id = email.get("id", "")
 
-    if query in subject.lower() or query in sender.lower():
+    if (
+        query in subject.lower()
+        or query in sender.lower()
+        or any(query in t.lower() for t in tags_list)
+    ):
         results.append({
             "title": subject,
             "subtitle": f"[{tag}] • {sender} — {date}",

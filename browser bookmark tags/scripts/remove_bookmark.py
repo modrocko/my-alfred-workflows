@@ -21,25 +21,23 @@ if not os.path.exists(db_path):
 with open(db_path, "r") as f:
     bookmarks = json.load(f)
 
-# Remove tag & remove entry if no tags remain
-updated = []
 tag_removed = False
 
-for bm in bookmarks:
-    if bm.get("url") == url:
-        tags = bm.get("tags", [])
-        if tag_to_remove in tags:
-            tags.remove(tag_to_remove)
-            tag_removed = True
-        if tags:
-            bm["tags"] = tags
-            updated.append(bm)
-        # else: do not re-add bookmark (it's tagless)
-    else:
-        updated.append(bm)
+# Find the tag group
+tag_entry = next((b for b in bookmarks if b.get("tag") == tag_to_remove), None)
 
+if tag_entry:
+    original_count = len(tag_entry["urls"])
+    tag_entry["urls"] = [entry for entry in tag_entry["urls"] if entry.get("url") != url]
+    if len(tag_entry["urls"]) != original_count:
+        tag_removed = True
+
+# Remove the tag group completely if no URLs left
+bookmarks = [b for b in bookmarks if b.get("urls")]
+
+# Save updated bookmarks
 with open(db_path, "w") as f:
-    json.dump(updated, f, indent=2)
+    json.dump(bookmarks, f, indent=2)
 
 # Notify if tag was removed
 if tag_removed:

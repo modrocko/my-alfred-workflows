@@ -18,14 +18,8 @@ if not os.path.exists(db_path):
 with open(db_path, "r") as f:
     bookmarks = json.load(f)
 
-# Remove tag from all bookmarks
-for bm in bookmarks:
-    tags = bm.get("tags", [])
-    if tag_to_remove in tags:
-        tags.remove(tag_to_remove)
-
-# Keep only bookmarks that still have tags
-bookmarks = [b for b in bookmarks if b.get("tags")]
+# Remove the entire tag group
+bookmarks = [b for b in bookmarks if b.get("tag") != tag_to_remove]
 
 # Save updated bookmarks
 with open(db_path, "w") as f:

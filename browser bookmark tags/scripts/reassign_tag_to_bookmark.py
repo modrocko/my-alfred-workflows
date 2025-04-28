@@ -19,23 +19,33 @@ if not os.path.exists(db_path):
 with open(db_path, "r") as f:
     bookmarks = json.load(f)
 
-updated = []
 tag_changed = False
 
-for bm in bookmarks:
-    if bm.get("url") == url:
-        tags = bm.get("tags", [])
-        if old_tag in tags:
-            tags.remove(old_tag)
-            if new_tag not in tags:
-                tags.append(new_tag)
-            bm["tags"] = tags
-            tag_changed = True
-    updated.append(bm)
+# Step 1: Find old tag group
+old_tag_entry = next((b for b in bookmarks if b.get("tag") == old_tag), None)
 
+# Step 2: Find or create new tag group
+new_tag_entry = next((b for b in bookmarks if b.get("tag") == new_tag), None)
+if not new_tag_entry:
+    new_tag_entry = {"tag": new_tag, "urls": []}
+    bookmarks.append(new_tag_entry)
+
+# Step 3: Move URL from old to new
+if old_tag_entry:
+    for entry in old_tag_entry.get("urls", []):
+        if entry.get("url") == url:
+            new_tag_entry["urls"].append(entry)
+            old_tag_entry["urls"].remove(entry)
+            tag_changed = True
+            break
+
+# Step 4: Remove old tag group if empty
+bookmarks = [b for b in bookmarks if b.get("urls")]
+
+# Step 5: Save if changed
 if tag_changed:
     with open(db_path, "w") as f:
-        json.dump(updated, f, indent=2)
+        json.dump(bookmarks, f, indent=2)
 
     subprocess.run([
         "osascript", "-e",

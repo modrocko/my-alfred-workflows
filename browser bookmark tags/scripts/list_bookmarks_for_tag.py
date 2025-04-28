@@ -13,14 +13,18 @@ if not os.path.exists(db_path):
 with open(db_path, "r") as f:
     bookmarks = json.load(f)
 
+# Find the tag group
+tag_entry = next((b for b in bookmarks if b.get("tag") == tag), None)
+
 items = []
-for bm in bookmarks:
-    if tag in bm.get("tags", []):
-        title = bm.get("title", "")
-        url = bm.get("url", "")
+if tag_entry:
+    for entry in tag_entry.get("urls", []):
+        title = entry.get("title", "")
+        url = entry.get("url", "")
+
         items.append({
             "title": title,
-            "subtitle": url,
+            "subtitle": f"[{tag}] • {url}",
             "arg": url,
             "mods": {
                 "cmd": {

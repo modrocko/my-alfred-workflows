@@ -10,13 +10,13 @@ tag = sys.argv[1].strip().replace("!", "❗")
 workflow_dir = os.environ["alfred_workflow_data"]
 db_path = os.path.join(workflow_dir, "bookmarks.json")
 notif_title = os.environ["alfred_workflow_name"]
-browser = os.environ["browser"]
+browser = os.environ.get("browser", "Safari")
 
 # Check if tagging all tabs or all windows
 tag_all_tabs = os.getenv("tag_all_tabs", "") == "1"
 tag_all_windows = os.getenv("tag_all_windows", "") == "1"
 
-# AppleScript to get tabs info
+# AppleScript to get tabs info (only title + url)
 if tag_all_windows:
     script = f'''
     tell application "{browser}"
@@ -58,7 +58,7 @@ else:
     end tell
     '''
 
-
+# Get tabs
 try:
     result = subprocess.check_output(["osascript", "-e", script])
     decoded = result.decode("utf-8").strip()
@@ -80,19 +80,30 @@ if os.path.exists(db_path):
     with open(db_path, "r") as f:
         bookmarks = json.load(f)
 
+# Find or create the tag group
+tag_entry = next((b for b in bookmarks if b.get("tag") == tag), None)
+if not tag_entry:
+    tag_entry = {"tag": tag, "urls": []}
+    bookmarks.append(tag_entry)
+
 # Process each tab
 added = 0
 for item in decoded.split("%%"):
     if not item.strip():
         continue
-    title, url = item.strip().split("||")
-    exists = any(b["url"] == url and tag in b.get("tags", []) for b in bookmarks)
+    parts = item.strip().split("||")
+    if len(parts) != 2:
+        continue
+    title, url = parts
+    title = title.strip()
+    url = url.strip()
 
-    if not exists:
-        bookmarks.append({
-            "title": title.strip(),
-            "url": url.strip(),
-            "tags": [tag]
+    already_tagged = any(entry["url"] == url for entry in tag_entry["urls"])
+
+    if not already_tagged:
+        tag_entry["urls"].append({
+            "title": title,
+            "url": url
         })
         added += 1
 

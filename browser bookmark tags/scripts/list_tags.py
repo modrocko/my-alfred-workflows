@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import subprocess
 
 # Get user input
 query = sys.argv[1].lower() if len(sys.argv) > 1 else ""
@@ -19,11 +20,13 @@ if not os.path.exists(db_path):
 with open(db_path, "r") as f:
     bookmarks = json.load(f)
 
-# Count how often each tag appears
+# Count number of URLs per tag
 tag_counts = {}
 for bm in bookmarks:
-    for tag in bm.get("tags", []):
-        tag_counts[tag] = tag_counts.get(tag, 0) + 1
+    tag = bm.get("tag", "")
+    urls = bm.get("urls", [])
+    if tag:
+        tag_counts[tag] = len(urls)
 
 # Filter by query
 filtered_tags = sorted(tag for tag in tag_counts if query in tag.lower()) if query else sorted(tag_counts)
@@ -65,6 +68,13 @@ for tag in filtered_tags:
             }
         }
     })
+
+
+if not items:
+    items = [{
+        "title": "No tagged bookmarks found",
+        "valid": False
+    }]
 
 # Output to Alfred
 print(json.dumps({"items": items}))

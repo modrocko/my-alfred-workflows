@@ -13,10 +13,11 @@ title = os.environ["alfred_workflow_name"]
 with open(db_path, "r") as f:
     emails = json.load(f)
 
-# Replace old tag with new one
-for email in emails:
-    if "tags" in email and old_tag in email["tags"]:
-        email["tags"] = [new_tag if t == old_tag else t for t in email["tags"]]
+# Find and rename the tag group
+for tag_entry in emails:
+    if tag_entry.get("tag") == old_tag:
+        tag_entry["tag"] = new_tag
+        break
 
 # Save updated data
 with open(db_path, "w") as f:

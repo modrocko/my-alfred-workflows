@@ -24,8 +24,10 @@ if os.path.exists(default_tags_path):
 
 # Collect tags from emails + defaults
 tag_set = set(default_tags)
-for email in emails:
-    tag_set.update(email.get("tags", []))
+for tag_group in emails:
+    tag = tag_group.get("tag", "")
+    if tag:
+        tag_set.add(tag)
 
 # Filter
 filtered = sorted(t for t in tag_set if query in t.lower())

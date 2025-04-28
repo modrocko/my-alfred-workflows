@@ -21,24 +21,22 @@ if not os.path.exists(db_path):
 with open(db_path, "r") as f:
     emails = json.load(f)
 
-# Build new list, excluding emails that end up with no tags
-updated = []
 tag_removed = False
 
-for email in emails:
-    if email.get("id") == message_id:
-        tags = email.get("tags", [])
-        if tag_to_remove in tags:
-            tags.remove(tag_to_remove)
+# Find the tag group
+for tag_entry in emails:
+    if tag_entry.get("tag") == tag_to_remove:
+        original_count = len(tag_entry["emails"])
+        tag_entry["emails"] = [entry for entry in tag_entry["emails"] if entry.get("id") != message_id]
+        if len(tag_entry["emails"]) != original_count:
             tag_removed = True
-        if tags:
-            email["tags"] = tags
-            updated.append(email)
-    else:
-        updated.append(email)
+        break
+
+# Remove the tag group if it has no emails left
+emails = [b for b in emails if b.get("emails")]
 
 with open(db_path, "w") as f:
-    json.dump(updated, f, indent=2)
+    json.dump(emails, f, indent=2)
 
 # ✅ Notification if tag was removed
 if tag_removed:

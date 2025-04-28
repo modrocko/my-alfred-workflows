@@ -11,7 +11,6 @@ workflow_dir = os.environ["alfred_workflow_data"]
 db_path = os.path.join(workflow_dir, "emails.json")
 title = os.environ["alfred_workflow_name"]
 
-# AppleScript: get subject, sender, date, id
 applescript = """
 tell application "Mail"
 	set selectedMessages to selection
@@ -30,7 +29,6 @@ end tell
 result = subprocess.run(["osascript", "-e", applescript], capture_output=True, text=True)
 raw_output = result.stdout.strip()
 
-# If nothing selected
 if not raw_output:
     subprocess.run([
         "osascript",
@@ -40,13 +38,13 @@ if not raw_output:
     sys.exit(0)
 
 # Parse AppleScript result
-emails = []
+emails_to_tag = []
 for item in raw_output.split("%%"):
     if not item.strip():
         continue
     parts = item.strip().split("||")
     if len(parts) == 4:
-        emails.append({
+        emails_to_tag.append({
             "subject": parts[0].strip(),
             "sender": parts[1].strip(),
             "date": parts[2].strip(),
@@ -60,16 +58,18 @@ if os.path.exists(db_path):
 else:
     db = []
 
-# Tag emails - add new entry only if same ID+tag combo doesn't exist
+# Find or create the tag group
+tag_entry = next((b for b in db if b.get("tag") == tag), None)
+if not tag_entry:
+    tag_entry = {"tag": tag, "emails": []}
+    db.append(tag_entry)
+
+# Add emails if not already tagged
 added = 0
-for email in emails:
-    already_tagged = any(
-        entry["id"] == email["id"] and tag in entry.get("tags", [])
-        for entry in db
-    )
+for email in emails_to_tag:
+    already_tagged = any(entry["id"] == email["id"] for entry in tag_entry["emails"])
     if not already_tagged:
-        email["tags"] = [tag]
-        db.append(email)
+        tag_entry["emails"].append(email)
         added += 1
 
 # Save updated file

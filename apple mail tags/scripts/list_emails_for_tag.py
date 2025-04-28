@@ -13,13 +13,16 @@ if not os.path.exists(db_path):
 with open(db_path, "r") as f:
     emails = json.load(f)
 
+# Find the tag group
+tag_entry = next((b for b in emails if b.get("tag") == tag), None)
+
 items = []
-for email in emails:
-    if tag in email.get("tags", []):
-        subject = email["subject"]
-        sender = email["sender"]
-        date = email["date"]
-        message_id = email.get("id", "")
+if tag_entry:
+    for entry in tag_entry.get("emails", []):
+        subject = entry.get("subject", "")
+        sender = entry.get("sender", "")
+        date = entry.get("date", "")
+        message_id = entry.get("id", "")
         items.append({
             "title": subject,
             "subtitle": f"{sender} — {date}",

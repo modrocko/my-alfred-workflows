@@ -219,6 +219,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2830BA6C-B1D0-479A-80E5-D59845F78ADA</string>
+				<key>modifiers</key>
+				<integer>655360</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>468A0F93-9B74-4748-B06A-CCC8704A3515</key>
 		<array>
@@ -435,28 +445,14 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>import os
-import sys
-import json
-import subprocess
-
-tag = sys.argv[1].strip()
-workflow_dir = os.environ["alfred_workflow_data"]
-db_path = os.path.join(workflow_dir, "bookmarks.json")
-
-with open(db_path, "r") as f:
-    bookmarks = json.load(f)
-
-urls = [bm["url"] for bm in bookmarks if tag in bm.get("tags", [])]
-
-for url in urls:
-    subprocess.run(["open", url])</string>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/open_all_browser_tabs.py "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>9</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -473,10 +469,14 @@ for url in urls:
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>cd "$alfred_workflow_directory"
-python3 scripts/tag_browser_tabs.py "{query}"</string>
+				<string>if [[ "$1" == "reassign" ]]; then
+  echo "url=$url"
+  echo "old_tag=$old_tag"
+else
+  echo ""
+fi</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -485,7 +485,7 @@ python3 scripts/tag_browser_tabs.py "{query}"</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>F8C513B3-74C3-46FF-96B5-6C341D644E05</string>
+			<string>49DA4361-9584-46E8-B8B9-ED84DFAB911A</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -548,14 +548,10 @@ python3 scripts/specify_tag.py "{query}"
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>if [[ "$1" == "reassign" ]]; then
-  echo "url=$url"
-  echo "old_tag=$old_tag"
-else
-  echo ""
-fi</string>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/tag_browser_tabs.py "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -564,9 +560,30 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>49DA4361-9584-46E8-B8B9-ED84DFAB911A</string>
+			<string>F8C513B3-74C3-46FF-96B5-6C341D644E05</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>newtag</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Type new tag to assign</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>91359DC5-1A87-43F5-BFFE-C62195FE5697</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -593,27 +610,6 @@ osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in 
 			<string>54C42F4C-0D3F-4100-A5AE-4241CB24F290</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>newtag</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Type new tag to assign</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>91359DC5-1A87-43F5-BFFE-C62195FE5697</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -729,58 +725,6 @@ osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in 
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>import sys
-import subprocess
-
-url = sys.argv[1].strip()
-if url:
-    subprocess.run(["open", url])</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>9</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>61C5D0E8-A3F0-4FDB-AAAF-B301BEBA903D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cd "$alfred_workflow_directory"
-python3 scripts/open_bookmark_and_remove_tag.py "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>2C98A8B3-07A5-4E28-9531-C2E6604CE390</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -826,6 +770,58 @@ python3 scripts/list_bookmarks_for_tag.py "{query}"
 			<string>8B7C7CB9-D059-4167-B4BA-1B074C80CD46</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/open_bookmark_and_remove_tag.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2C98A8B3-07A5-4E28-9531-C2E6604CE390</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+import subprocess
+
+url = sys.argv[1].strip()
+if url:
+    subprocess.run(["open", url])</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>9</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>61C5D0E8-A3F0-4FDB-AAAF-B301BEBA903D</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1066,6 +1062,30 @@ osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in 
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/restore_tabs.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2830BA6C-B1D0-479A-80E5-D59845F78ADA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1143,18 +1163,18 @@ python3 scripts/list_bookmarks_for_search.py "{query}"
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>:bt init</string>
+				<string>:bt edit</string>
 				<key>subtext</key>
-				<string>↵ to intialize workflow ∙ ⌘↵ to reset data files</string>
+				<string>↵ Edit bookmarks file ∙ ⌘ ↵ Edit tags file ∙ ⌥↵ Open data folder ∙ ⌃↵ Open workflow folder</string>
 				<key>text</key>
-				<string>Initialize (or reset) workflow</string>
+				<string>Edit data files directly</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>A73575EA-8C0D-46E5-B4FB-492B4A4A7B94</string>
+			<string>00E55C68-15F1-4376-8AD0-253BE9858383</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1193,7 +1213,7 @@ if not os.path.exists(bookmarks_path):
 
 # Create default-tags.json with hardcoded tags
 if not os.path.exists(default_tags_path):
-    default_tags_list = ["@read", "@research", "@shop", "@projects"]
+    default_tags_list = ["#read", "#research", "#shop", "#projects"]
     with open(default_tags_path, 'w') as f:
         json.dump(default_tags_list, f, indent=2)
 
@@ -1245,18 +1265,18 @@ subprocess.run([
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>:bt edit</string>
+				<string>:bt init</string>
 				<key>subtext</key>
-				<string>↵ Edit bookmarks file ∙ ⌘ ↵ Edit tags file ∙ ⌥↵ Open data folder ∙ ⌃↵ Open workflow folder</string>
+				<string>↵ to intialize workflow ∙ ⌘↵ to reset data files</string>
 				<key>text</key>
-				<string>Edit data files directly</string>
+				<string>Initialize (or reset) workflow</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>00E55C68-15F1-4376-8AD0-253BE9858383</string>
+			<string>A73575EA-8C0D-46E5-B4FB-492B4A4A7B94</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1398,6 +1418,13 @@ A simple system for tagging, finding and managing tags for your browser tabs (we
 			<real>760</real>
 			<key>ypos</key>
 			<real>1005</real>
+		</dict>
+		<key>2830BA6C-B1D0-479A-80E5-D59845F78ADA</key>
+		<dict>
+			<key>xpos</key>
+			<real>75</real>
+			<key>ypos</key>
+			<real>860</real>
 		</dict>
 		<key>2BDECCE9-4FB0-4B8F-BDAB-1371B62CBF24</key>
 		<dict>

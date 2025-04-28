@@ -21,27 +21,25 @@ if message_id:
 time.sleep(0.5)
 
 tag_removed = False
-updated_emails = []
 
 if os.path.exists(data_path):
     with open(data_path, "r") as f:
         emails = json.load(f)
 
-    for email in emails:
-        if email.get("id") == message_id:
-            tags = email.get("tags", [])
-            if tag in tags:
-                tags.remove(tag)
+    # Find the tag group
+    for tag_entry in emails:
+        if tag_entry.get("tag") == tag:
+            original_count = len(tag_entry["emails"])
+            tag_entry["emails"] = [entry for entry in tag_entry["emails"] if entry.get("id") != message_id]
+            if len(tag_entry["emails"]) != original_count:
                 tag_removed = True
-            if tags:
-                email["tags"] = tags
-                updated_emails.append(email)
-            # else: don't add back (removes from file)
-        else:
-            updated_emails.append(email)
+            break
+
+    # Remove the tag group if it has no emails left
+    emails = [b for b in emails if b.get("emails")]
 
     with open(data_path, "w") as f:
-        json.dump(updated_emails, f, indent=2)
+        json.dump(emails, f, indent=2)
 
 # ✅ Show notification
 if tag_removed:

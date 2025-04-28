@@ -2,27 +2,25 @@ import os
 import json
 import sys
 
-# Get typed input from Alfred
 query = sys.argv[1].lower() if len(sys.argv) > 1 else ""
 
-# Get workflow directory path
 workflow_dir = os.environ["alfred_workflow_data"]
 db_path = os.path.join(workflow_dir, "emails.json")
 
-# Return nothing if file doesn't exist
 if not os.path.exists(db_path):
     print('{"items": []}')
     exit()
 
-# Load email data
 with open(db_path, "r") as f:
     emails = json.load(f)
 
-# Count how many times each tag appears
+# Count how many emails under each tag
 tag_counts = {}
-for email in emails:
-    for tag in email.get("tags", []):
-        tag_counts[tag] = tag_counts.get(tag, 0) + 1
+for tag_group in emails:
+    tag = tag_group.get("tag", "")
+    email_list = tag_group.get("emails", [])
+    if tag:
+        tag_counts[tag] = len(email_list)
 
 # Filter & sort tags
 filtered_tags = sorted(tag for tag in tag_counts if query in tag.lower()) if query else sorted(tag_counts)
@@ -53,10 +51,16 @@ for tag in filtered_tags:
             },
             "shift": {
                 "arg": tag,
-                "subtitle": "Open all emails with: {tag}"
+                "subtitle": f"Open all emails with: {tag}"
             }
         }
     })
 
-# Output to Alfred
+
+if not items:
+    items = [{
+        "title": "No tagged bookmarks found",
+        "valid": False
+    }]
+
 print(json.dumps({"items": items}))

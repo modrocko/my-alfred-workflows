@@ -1164,7 +1164,7 @@ if not os.path.exists(db_path):
 
 # Create default-tags.json with hardcoded tags
 if not os.path.exists(default_tags_path):
-    default_tags_list = ["@followup", "@unread", "@waiting", "@orders"]
+    default_tags_list = ["#followup", "#unread", "#waiting", "#orders"]
     with open(default_tags_path, 'w') as f:
         json.dump(default_tags_list, f, indent=2)
 

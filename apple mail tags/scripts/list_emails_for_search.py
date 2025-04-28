@@ -14,45 +14,45 @@ with open(db_path, "r") as f:
     emails = json.load(f)
 
 results = []
-for email in emails:
-    subject = email.get("subject", "")
-    sender = email.get("sender", "")
-    date = email.get("date", "")
-    tags_list = email.get("tags", [])
-    tag = tags_list[0] if tags_list else ""
-    message_id = email.get("id", "")
+for tag_entry in emails:
+    tag = tag_entry.get("tag", "")
+    for email in tag_entry.get("emails", []):
+        subject = email.get("subject", "")
+        sender = email.get("sender", "")
+        date = email.get("date", "")
+        message_id = email.get("id", "")
 
-    if (
-        query in subject.lower()
-        or query in sender.lower()
-        or any(query in t.lower() for t in tags_list)
-    ):
-        results.append({
-            "title": subject,
-            "subtitle": f"[{tag}] • {sender} — {date}",
-            "arg": message_id,
-            "mods": {
-                "cmd": {
-                    "arg": f"{message_id}||{tag}",
-                    "subtitle": f"⌘↵ to remove tag '{tag}' from this email"
-                },
-                "alt": {
-                    "arg": message_id,
-                    "subtitle": f"⌥↵ to open & remove tag '{tag}'",
-                    "variables": {
-                        "tag": tag
-                    }
-                },
-                "ctrl": {
-                    "arg": "reassign",
-                    "subtitle": f"⌃↵ to reassign tag from '{tag}'",
-                    "variables": {
-                        "id": message_id,
-                        "old_tag": tag
+        if (
+            query in subject.lower()
+            or query in sender.lower()
+            or query in tag.lower()
+        ):
+            results.append({
+                "title": subject,
+                "subtitle": f"[{tag}] • {sender} — {date}",
+                "arg": message_id,
+                "mods": {
+                    "cmd": {
+                        "arg": f"{message_id}||{tag}",
+                        "subtitle": f"⌘↵ to remove tag '{tag}' from this email"
+                    },
+                    "alt": {
+                        "arg": message_id,
+                        "subtitle": f"⌥↵ to open & remove tag '{tag}'",
+                        "variables": {
+                            "tag": tag
+                        }
+                    },
+                    "ctrl": {
+                        "arg": "reassign",
+                        "subtitle": f"⌃↵ to reassign tag from '{tag}'",
+                        "variables": {
+                            "id": message_id,
+                            "old_tag": tag
+                        }
                     }
                 }
-            }
-        })
+            })
 
 if not results:
     results.append({

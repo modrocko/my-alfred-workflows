@@ -18,14 +18,8 @@ if not os.path.exists(db_path):
 with open(db_path, "r") as f:
     emails = json.load(f)
 
-# Remove tag from all emails
-for email in emails:
-    tags = email.get("tags", [])
-    if tag_to_remove in tags:
-        tags.remove(tag_to_remove)
-
-# Remove any emails that no longer have tags
-emails = [e for e in emails if e.get("tags")]
+# Remove entire tag group
+emails = [tag_entry for tag_entry in emails if tag_entry.get("tag") != tag_to_remove]
 
 # Save updated data
 with open(db_path, "w") as f:

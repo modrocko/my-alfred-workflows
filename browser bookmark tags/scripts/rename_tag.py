@@ -18,10 +18,10 @@ if not os.path.exists(db_path):
 with open(db_path, "r") as f:
     bookmarks = json.load(f)
 
-# Rename tag in each entry
+# Find the tag entry
 for bm in bookmarks:
-    if "tags" in bm and old_tag in bm["tags"]:
-        bm["tags"] = [new_tag if t == old_tag else t for t in bm["tags"]]
+    if bm.get("tag") == old_tag:
+        bm["tag"] = new_tag
 
 # Save updated data
 with open(db_path, "w") as f:

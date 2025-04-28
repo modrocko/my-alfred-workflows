@@ -14,13 +14,15 @@ if os.path.exists(default_tags_path):
     with open(default_tags_path, "r") as f:
         default_tags = json.load(f)
 
-# Load tags from bookmarks
+# Load assigned tags from bookmarks
 assigned_tags = set()
 if os.path.exists(db_path):
     with open(db_path, "r") as f:
         bookmarks = json.load(f)
         for bm in bookmarks:
-            assigned_tags.update(bm.get("tags", []))
+            tag = bm.get("tag", "")
+            if tag:
+                assigned_tags.add(tag)
 
 # Combine tags
 all_tags = set(default_tags) | assigned_tags
@@ -37,7 +39,7 @@ items = [{
     "title": tag,
     "subtitle": "↵ tag tab  •  ⌘ tag tabs in front window •  ⌃ tag tabs across windows",
     "arg": tag,
-        "mods": {
+    "mods": {
         "cmd": {
             "arg": tag,
             "subtitle": "⌘↵ to tag all tabs in front window",

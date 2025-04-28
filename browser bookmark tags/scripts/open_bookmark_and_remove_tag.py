@@ -16,28 +16,30 @@ if not url or not tag:
 subprocess.run(["open", url])
 
 tag_removed = False
-updated = []
+bookmarks = []
 
 if os.path.exists(db_path):
     with open(db_path, "r") as f:
         bookmarks = json.load(f)
 
-    for bm in bookmarks:
-        if bm["url"] == url and tag in bm.get("tags", []):
-            bm["tags"].remove(tag)
+    # Find the tag group
+    tag_entry = next((b for b in bookmarks if b.get("tag") == tag), None)
+
+    if tag_entry:
+        original_count = len(tag_entry["urls"])
+        tag_entry["urls"] = [entry for entry in tag_entry["urls"] if entry.get("url") != url]
+        if len(tag_entry["urls"]) != original_count:
             tag_removed = True
-            if bm["tags"]:
-                updated.append(bm)
-            # else: don't re-add
-        else:
-            updated.append(bm)
+
+    # Remove the entire tag if it has no URLs left
+    bookmarks = [b for b in bookmarks if b.get("urls")]
 
     with open(db_path, "w") as f:
-        json.dump(updated, f, indent=2)
+        json.dump(bookmarks, f, indent=2)
 
 # ✅ Notification
 if tag_removed:
     subprocess.run([
         "osascript", "-e",
-        f'display notification "Removed tag \\"{tag}\\"" with title "{notif_title}"'
+        f'display notification "Removed URL from tag \\"{tag}\\"" with title "{notif_title}"'
     ])

@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.toddsgotapen.tagit</string>
+	<key>connections</key>
+	<dict>
+		<key>00D6EDE5-08E7-4738-B709-A0ADE79241FA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E377B8B3-9CEA-450A-81CD-E20C30495625</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CCA2FA43-8D69-4F63-8569-B553F9C8B1F9</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reset data files</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>01DC141D-19B5-49A1-8877-E3D88B065C03</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3B79DBBE-65FB-4838-A630-7F460CFF70DA</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F24BFAC7-49AF-4318-A0F6-99F545366D86</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2E049BF0-4133-41C3-A115-1294AA5E009B</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>45A4A40B-A8DA-4F12-8E1C-29F192612474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0C11029C-6EA0-4F3A-B2DA-445D04A38860</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7B09CA4-B616-4CE0-ADDF-A0E71AB9D17F</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AB8EA87B-2A2B-4380-93E1-FD740E5BE374</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C14E5E27-20CC-4702-9CDF-02F93BE30AA9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>17B0DFBE-208F-414B-8DA2-B8E9D6F98289</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4C6184CB-F717-480D-86DD-6050571026A3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>45A4A40B-A8DA-4F12-8E1C-29F192612474</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7B09CA4-B616-4CE0-ADDF-A0E71AB9D17F</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AB8EA87B-2A2B-4380-93E1-FD740E5BE374</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C14E5E27-20CC-4702-9CDF-02F93BE30AA9</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4C6184CB-F717-480D-86DD-6050571026A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9DC7200D-643A-4990-B761-C80BA6F83B1F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>51100120-8934-4147-8F61-66981D1FE39B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E04820B5-E336-4756-8181-4FE9FC938D3D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>525CCC53-7746-4B83-8850-E244D8A83819</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DAD8FDB7-DF52-47A1-B08D-6D59655C8717</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string>fuckkkcccc</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>DDEAEE87-48F2-44E7-994B-4BD6D5A32896</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Open the data folder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EF3C8FD9-0DBC-4327-B404-F37848E73C0F</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open the workflow folder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6060256D-76A0-46B7-A54D-FB318D145A96</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>62FB1192-961C-440A-975D-BEDFD1F32742</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B112702C-80D1-4A60-B2D9-3308685B8B1B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3B79DBBE-65FB-4838-A630-7F460CFF70DA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B6FDE0DC-E5D0-41BB-9BBA-EF3F215DCE41</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>45A4A40B-A8DA-4F12-8E1C-29F192612474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C14E5E27-20CC-4702-9CDF-02F93BE30AA9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6060256D-76A0-46B7-A54D-FB318D145A96</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CCA2FA43-8D69-4F63-8569-B553F9C8B1F9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E377B8B3-9CEA-450A-81CD-E20C30495625</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E04820B5-E336-4756-8181-4FE9FC938D3D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>01DC141D-19B5-49A1-8877-E3D88B065C03</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>45A4A40B-A8DA-4F12-8E1C-29F192612474</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>17B0DFBE-208F-414B-8DA2-B8E9D6F98289</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C035299-D7E6-452D-985C-BD510CAF8859</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Todd Clarke</string>
+	<key>description</key>
+	<string>Tag emails, files &amp; webpages for easy access</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Tag It!</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+
+if [ "$item_type" = "email" ]; then
+  python3 scripts/tag_emails.py "$1"
+elif [ "$item_type" = "file" ]; then
+  python3 scripts/tag_files.py "$1"
+elif [ "$item_type" = "bookmark" ]; then
+  python3 scripts/tag_tabs.py "$1"
+else
+  echo "Unknown item_type: $item_type" &gt;&amp;2
+  exit 1
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3B79DBBE-65FB-4838-A630-7F460CFF70DA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>tagi</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/specify_tag.py "$1"
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Tag emails, browser tabs or files</string>
+				<key>title</key>
+				<string>Tag something!</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B112702C-80D1-4A60-B2D9-3308685B8B1B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading tagged bookmarks...</string>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/list_tag_groups.py "$1"
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>01DC141D-19B5-49A1-8877-E3D88B065C03</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/remove_items_from_tag.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F24BFAC7-49AF-4318-A0F6-99F545366D86</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/remove_item_from_tag.py "$1"
+
+tag="${1##*||}"
+osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_tags_list\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D7B09CA4-B616-4CE0-ADDF-A0E71AB9D17F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/open_all_items.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2E049BF0-4133-41C3-A115-1294AA5E009B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+import os
+import subprocess
+import urllib.parse
+
+arg = sys.argv[1].strip()
+item_type = os.environ.get("item_type", "")
+parts = arg.split("||")
+
+if item_type == "email":
+    message_id = parts[0]
+    encoded = urllib.parse.quote(f"&lt;{message_id}&gt;")
+    subprocess.run(["open", f"message://{encoded}"])
+
+elif item_type == "file":
+    path = parts[0]
+    subprocess.run(["open", path])
+
+elif item_type == "bookmark":
+    url = parts[0]
+    subprocess.run(["open", url])</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>9</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AB8EA87B-2A2B-4380-93E1-FD740E5BE374</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>tags</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading tags...</string>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/list_items_for_search.py "$1"
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search all items by their key attributes</string>
+				<key>title</key>
+				<string>Search tagged items</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0C11029C-6EA0-4F3A-B2DA-445D04A38860</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_tags_list</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>B6FDE0DC-E5D0-41BB-9BBA-EF3F215DCE41</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading tagged bookmarks...</string>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/list_items_for_tag.py "$1"
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>45A4A40B-A8DA-4F12-8E1C-29F192612474</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>786432</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>51100120-8934-4147-8F61-66981D1FE39B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>tagl</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading tags...</string>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/list_tags.py "$1"
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Show tagged items grouped by tag</string>
+				<key>title</key>
+				<string>Show tagged items</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E04820B5-E336-4756-8181-4FE9FC938D3D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/rename_tag.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9DC7200D-643A-4990-B761-C80BA6F83B1F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>rename tag</string>
+				<key>subtext</key>
+				<string>Rename this tag</string>
+				<key>text</key>
+				<string>Rename tag: {var:old_tag}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>17B0DFBE-208F-414B-8DA2-B8E9D6F98289</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:old_tag}||{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4C6184CB-F717-480D-86DD-6050571026A3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/delete_tag.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3C035299-D7E6-452D-985C-BD510CAF8859</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>rename title</string>
+				<key>subtext</key>
+				<string>Rename this tag</string>
+				<key>text</key>
+				<string>Rename title: {var:old_title}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C14E5E27-20CC-4702-9CDF-02F93BE30AA9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/rename_title.py "$1"
+
+tag="${1%%||*}"
+osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_tags_list\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>62FB1192-961C-440A-975D-BEDFD1F32742</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:tag}||{var:uid}||{var:old_title}||{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>6060256D-76A0-46B7-A54D-FB318D145A96</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -a TextEdit "$alfred_workflow_data/items.json"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DAD8FDB7-DF52-47A1-B08D-6D59655C8717</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:tag edit</string>
+				<key>subtext</key>
+				<string>↵ Edit data file ∙ ⌘ ↵ Open data folder ∙ ⌥↵ Open workflow folder</string>
+				<key>text</key>
+				<string>Edit data files directly</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>525CCC53-7746-4B83-8850-E244D8A83819</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import os
+import json
+import subprocess
+
+# Paths
+workflow_dir = os.environ["alfred_workflow_data"]
+items_path = os.path.join(workflow_dir, "items.json")
+title = os.environ["alfred_workflow_name"]
+
+# If already setup, skip
+if os.path.exists(items_path):
+    subprocess.run([
+        "osascript", "-e",
+        f'display notification "Setup skipped — items.json already exists." with title "{title}"'
+    ])
+    exit(0)
+
+# Create directory
+os.makedirs(workflow_dir, exist_ok=True)
+
+# Create items.json
+with open(items_path, 'w') as f:
+    json.dump([], f, indent=2)
+
+# Notify success
+subprocess.run([
+    "osascript", "-e",
+    f'display notification "Setup complete — items.json created." with title "{title}"'
+])</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>9</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E377B8B3-9CEA-450A-81CD-E20C30495625</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open "$alfred_workflow_data"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DDEAEE87-48F2-44E7-994B-4BD6D5A32896</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:tag init</string>
+				<key>subtext</key>
+				<string>↵ to intialize workflow ∙ ⌘↵ to reset data files</string>
+				<key>text</key>
+				<string>Initialize (or reset) workflow</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>00D6EDE5-08E7-4738-B709-A0ADE79241FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open "$alfred_workflow_directory"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EF3C8FD9-0DBC-4327-B404-F37848E73C0F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import os
+
+workflow_dir = os.environ["alfred_workflow_data"]
+items_path = os.path.join(workflow_dir, "items.json")
+
+# Delete items.json if it exists
+if os.path.exists(items_path):
+    os.remove(items_path)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>9</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CCA2FA43-8D69-4F63-8569-B553F9C8B1F9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>00D6EDE5-08E7-4738-B709-A0ADE79241FA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>invoke init or reset</string>
+			<key>xpos</key>
+			<real>95</real>
+			<key>ypos</key>
+			<real>1210</real>
+		</dict>
+		<key>01DC141D-19B5-49A1-8877-E3D88B065C03</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>list tag groups</string>
+			<key>xpos</key>
+			<real>365</real>
+			<key>ypos</key>
+			<real>210</real>
+		</dict>
+		<key>0C11029C-6EA0-4F3A-B2DA-445D04A38860</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>search tags</string>
+			<key>xpos</key>
+			<real>175</real>
+			<key>ypos</key>
+			<real>465</real>
+		</dict>
+		<key>17B0DFBE-208F-414B-8DA2-B8E9D6F98289</key>
+		<dict>
+			<key>note</key>
+			<string>rename tag prompt</string>
+			<key>xpos</key>
+			<real>660</real>
+			<key>ypos</key>
+			<real>720</real>
+		</dict>
+		<key>2E049BF0-4133-41C3-A115-1294AA5E009B</key>
+		<dict>
+			<key>note</key>
+			<string>open all items</string>
+			<key>xpos</key>
+			<real>655</real>
+			<key>ypos</key>
+			<real>365</real>
+		</dict>
+		<key>3B79DBBE-65FB-4838-A630-7F460CFF70DA</key>
+		<dict>
+			<key>note</key>
+			<string>tag items</string>
+			<key>xpos</key>
+			<real>655</real>
+			<key>ypos</key>
+			<real>55</real>
+		</dict>
+		<key>3C035299-D7E6-452D-985C-BD510CAF8859</key>
+		<dict>
+			<key>note</key>
+			<string>delete tag</string>
+			<key>xpos</key>
+			<real>660</real>
+			<key>ypos</key>
+			<real>885</real>
+		</dict>
+		<key>45A4A40B-A8DA-4F12-8E1C-29F192612474</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>list items for tag</string>
+			<key>xpos</key>
+			<real>655</real>
+			<key>ypos</key>
+			<real>540</real>
+		</dict>
+		<key>4C6184CB-F717-480D-86DD-6050571026A3</key>
+		<dict>
+			<key>xpos</key>
+			<real>815</real>
+			<key>ypos</key>
+			<real>750</real>
+		</dict>
+		<key>51100120-8934-4147-8F61-66981D1FE39B</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>605</real>
+		</dict>
+		<key>525CCC53-7746-4B83-8850-E244D8A83819</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<real>540</real>
+			<key>ypos</key>
+			<real>1210</real>
+		</dict>
+		<key>6060256D-76A0-46B7-A54D-FB318D145A96</key>
+		<dict>
+			<key>xpos</key>
+			<real>1045</real>
+			<key>ypos</key>
+			<real>915</real>
+		</dict>
+		<key>62FB1192-961C-440A-975D-BEDFD1F32742</key>
+		<dict>
+			<key>note</key>
+			<string>rename title</string>
+			<key>xpos</key>
+			<real>1120</real>
+			<key>ypos</key>
+			<real>885</real>
+		</dict>
+		<key>9DC7200D-643A-4990-B761-C80BA6F83B1F</key>
+		<dict>
+			<key>note</key>
+			<string>rename tag</string>
+			<key>xpos</key>
+			<real>885</real>
+			<key>ypos</key>
+			<real>720</real>
+		</dict>
+		<key>AB8EA87B-2A2B-4380-93E1-FD740E5BE374</key>
+		<dict>
+			<key>note</key>
+			<string>open selected item</string>
+			<key>xpos</key>
+			<real>895</real>
+			<key>ypos</key>
+			<real>445</real>
+		</dict>
+		<key>B112702C-80D1-4A60-B2D9-3308685B8B1B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>specify tag</string>
+			<key>xpos</key>
+			<real>175</real>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>B6FDE0DC-E5D0-41BB-9BBA-EF3F215DCE41</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<real>360</real>
+			<key>ypos</key>
+			<real>535</real>
+		</dict>
+		<key>C14E5E27-20CC-4702-9CDF-02F93BE30AA9</key>
+		<dict>
+			<key>note</key>
+			<string>rename title prompt</string>
+			<key>xpos</key>
+			<real>885</real>
+			<key>ypos</key>
+			<real>885</real>
+		</dict>
+		<key>CCA2FA43-8D69-4F63-8569-B553F9C8B1F9</key>
+		<dict>
+			<key>note</key>
+			<string>run reset</string>
+			<key>xpos</key>
+			<real>210</real>
+			<key>ypos</key>
+			<real>1380</real>
+		</dict>
+		<key>D7B09CA4-B616-4CE0-ADDF-A0E71AB9D17F</key>
+		<dict>
+			<key>note</key>
+			<string>remove item from tag</string>
+			<key>xpos</key>
+			<real>895</real>
+			<key>ypos</key>
+			<real>225</real>
+		</dict>
+		<key>DAD8FDB7-DF52-47A1-B08D-6D59655C8717</key>
+		<dict>
+			<key>note</key>
+			<string>edit data file</string>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>1055</real>
+		</dict>
+		<key>DDEAEE87-48F2-44E7-994B-4BD6D5A32896</key>
+		<dict>
+			<key>note</key>
+			<string>open data folder</string>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>1210</real>
+		</dict>
+		<key>E04820B5-E336-4756-8181-4FE9FC938D3D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>list tags</string>
+			<key>xpos</key>
+			<real>175</real>
+			<key>ypos</key>
+			<real>720</real>
+		</dict>
+		<key>E377B8B3-9CEA-450A-81CD-E20C30495625</key>
+		<dict>
+			<key>note</key>
+			<string>run init</string>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>1210</real>
+		</dict>
+		<key>EF3C8FD9-0DBC-4327-B404-F37848E73C0F</key>
+		<dict>
+			<key>note</key>
+			<string>open workflow folder</string>
+			<key>xpos</key>
+			<real>760</real>
+			<key>ypos</key>
+			<real>1370</real>
+		</dict>
+		<key>F24BFAC7-49AF-4318-A0F6-99F545366D86</key>
+		<dict>
+			<key>note</key>
+			<string>remove items from tag</string>
+			<key>xpos</key>
+			<real>655</real>
+			<key>ypos</key>
+			<real>210</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>Brave Browser</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Chrome</string>
+						<string>Google Chrome</string>
+					</array>
+					<array>
+						<string>Brave</string>
+						<string>Brave Browser</string>
+					</array>
+					<array>
+						<string>Safari</string>
+						<string>Safari Browser</string>
+					</array>
+					<array>
+						<string>Arc</string>
+						<string>Arc Browser</string>
+					</array>
+					<array>
+						<string>Edge</string>
+						<string>Microsoft Edge Browser</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Select the browser for tagging browser tabs</string>
+			<key>label</key>
+			<string>Select Browser</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>browser</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>all_tabs_window</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Single tab in frontmost window</string>
+						<string>single_tab</string>
+					</array>
+					<array>
+						<string>All tabs in frontmost window</string>
+						<string>all_tabs_window</string>
+					</array>
+					<array>
+						<string>All tabs across windows</string>
+						<string>all_tabs_all_windows</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Select how this workflow should tag browser tabs</string>
+			<key>label</key>
+			<string>Select tagging for browser tabs</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>tag_scope</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.1.1</string>
+	<key>webaddress</key>
+	<string>toddsgotapen.com</string>
+</dict>
+</plist>

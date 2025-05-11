@@ -3,9 +3,7 @@ import sys
 import json
 import subprocess
 
-tag = sys.argv[1].strip()
-uid = os.environ.get("uid")
-
+tag, uid = sys.argv[1].split("||")
 print(f"TAG: {tag}\nUID: {uid}", file=sys.stderr)
 
 workflow_dir = os.environ["alfred_workflow_data"]

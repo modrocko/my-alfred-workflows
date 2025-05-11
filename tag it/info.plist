@@ -498,7 +498,7 @@ python3 scripts/remove_items_from_tag.py "$1"</string>
 				<string>cd "$alfred_workflow_directory"
 python3 scripts/remove_item_from_tag.py "$1"
 
-tag="${1##*||}"
+tag="${1%%||*}"
 osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_tags_list\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -546,33 +546,14 @@ python3 scripts/open_all_items.py "$1"</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>import sys
-import os
-import subprocess
-import urllib.parse
-
-arg = sys.argv[1].strip()
-item_type = os.environ.get("item_type", "")
-parts = arg.split("||")
-
-if item_type == "email":
-    message_id = parts[0]
-    encoded = urllib.parse.quote(f"&lt;{message_id}&gt;")
-    subprocess.run(["open", f"message://{encoded}"])
-
-elif item_type == "file":
-    path = parts[0]
-    subprocess.run(["open", path])
-
-elif item_type == "bookmark":
-    url = parts[0]
-    subprocess.run(["open", url])</string>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/open_item.py "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>9</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>

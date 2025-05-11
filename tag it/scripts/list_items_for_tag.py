@@ -36,6 +36,7 @@ items = []
 
 for entry in block["items"]:
     item_type = entry.get("type")
+    uid = entry.get("uid", "")
     note = entry.get("note", "")
     subtitle = ""
     title = ""
@@ -46,7 +47,6 @@ for entry in block["items"]:
         continue
 
     if item_type == "email":
-        uid = entry.get("uid", "")
         title = entry.get("subject", "(No Subject)")
         sender = entry.get("sender", "")
         date = entry.get("date", "")
@@ -56,7 +56,6 @@ for entry in block["items"]:
         icon = { "path": os.path.join(workflow_dir_root, "icons/email.png") }
 
     elif item_type == "file":
-        uid = entry.get("uid", "")
         path = entry.get("path", "")
         title = entry.get("name") or os.path.basename(path.rstrip("/"))
         kind = "folder" if os.path.isdir(path) else "file"
@@ -65,7 +64,6 @@ for entry in block["items"]:
         icon = { "path": "icons/file.png" }
 
     elif item_type == "bookmark":
-        uid = entry.get("uid", "")
         title = entry.get("title", entry.get("url", ""))
         url = entry.get("url", "")
         subtitle = f"[bookmark] • {url}"
@@ -79,21 +77,12 @@ for entry in block["items"]:
         "uid": uid,
         "title": title,
         "subtitle": subtitle,
-        "arg": arg,
-        "valid": True,
-        "variables": {
-            "action": "open",
-            "item_type": item_type,
-            "tag": query_tag
-        },
+        "arg": f"{query_tag}||{uid}",
         "icon": icon,
         "mods": {
             "cmd": {
                 "subtitle": "⌘ Remove item",
-                "arg": query_tag,
-                "variables": {
-                    "uid": uid
-                }
+                "arg": f"{query_tag}||{uid}"
             },
             "alt": {
                 "subtitle": "⌥ Rename title",

@@ -30,31 +30,25 @@ for group in tag_groups:
         label = ""
         subtitle_detail = ""
         arg = ""
+        uid = item.get("uid", "")
 
         if type_ == "file":
-            uid = item.get("uid", "")
             path = item.get("path", "")
             title = item.get("name") or os.path.basename(path.rstrip("/"))
             kind = "folder" if os.path.isdir(path) else "file"
             label = title
             subtitle_detail = f"[{kind}] • {path}"
-            arg = f"{path}||{tag}"
 
         elif type_ == "email":
-            uid = item.get("uid", "")
-            message_id = item.get("id", "")
             label = item.get("subject", "")
             sender = item.get("sender", "")
             date = item.get("date", "")
             subtitle_detail = f"{sender} • {date}"
-            arg = f"{message_id}||{tag}"
 
         elif type_ == "bookmark":
-            uid = item.get("uid", "")
             label = item.get("title") or item.get("url", "")
             url = item.get("url", "")
             subtitle_detail = url
-            arg = f"{url}||{tag}"
 
         else:
             continue  # skip unknown types
@@ -67,20 +61,12 @@ for group in tag_groups:
         items.append({
             "title": label,
             "subtitle": subtitle,
-            "arg": arg,
+            "arg": f"{tag}||{uid}",
             "icon": { "path": f"icons/{type_}.png" },
-            "variables": {
-                "action": "open",
-                "item_type": type_,
-                "tag": tag
-            },
             "mods": {
                 "cmd": {
                     "subtitle": "⌘ Remove item",
-                    "arg": tag,
-                    "variables": {
-                        "uid": uid
-                    }
+                    "arg": f"{tag}||{uid}"
                 },
                 "alt": {
                     "subtitle": "⌥ Rename title",

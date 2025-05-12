@@ -2,7 +2,9 @@
 
 Tag emails, files, folders & web pages for easy access later on.
 
-A consolidated Alfred system to:  
+I created this workflow to keep related items together for certain activities — all in one place. Projects, research, orders, favorites, recipes... whatever. I mainly use this for short term stuff. Less so for long-term bookmarks. I can tag, find & open email, files, folders & webpages in a breeze. 
+
+So, to summarize... a consolidated Alfred system to:  
 
 ✓  Keep your projects organized  
 ✓  Keep your work moving forward  
@@ -22,9 +24,9 @@ Easy — just press a bunch of the option keys to start saving, finding & viewin
 
 ### Initialize workflow
 
-▸ In *Configure Workflow*: Select browser preference ∙ Select tagging preference for browser window(s)
+▸ In *Configure Workflow*: 1) Select browser preference ∙ 2) Select tagging preference for browser window(s)
 
-▸ Initialize the workflow to create the underlying data file
+▸ Initialize the workflow to create the underlying data file *(see below)*
 
 ![image-20250509205555344](assets/image-20250509205555344.png) 
 
@@ -33,6 +35,8 @@ Easy — just press a bunch of the option keys to start saving, finding & viewin
 <kbd>⌘</kbd><kbd>↵</kbd> Reset data files (destructive action, will delete all existing data)
 
 ### Tag something
+
+Tag emails, files, folders or browser tabs. Keep typing to create new tag or apply filter to specify existing tag.
 
 ![image-20250509205651248](assets/image-20250509205651248.png) 
 
@@ -44,6 +48,8 @@ Easy — just press a bunch of the option keys to start saving, finding & viewin
 
 ### Show tagged items
 
+From the previous dialog... show all tags containing items for that tag.
+
 ![image-20250509221638765](assets/image-20250509221638765.png) 
 
 <kbd>↵</kbd>  View list of item types for this tag (emails, files & tabs)
@@ -54,23 +60,30 @@ Easy — just press a bunch of the option keys to start saving, finding & viewin
 
 <kbd>⌃</kbd><kbd>↵</kbd> View flat list all items for this tag
 
+## Show item types
+
+From the previous dialog... show tagged items, grouped by item type.
+
+![image-20250511163058886](assets/image-20250511163058886.png) 
+
+<kbd>↵</kbd>  View items for that item type
+
+<kbd>⌘</kbd><kbd>↵</kbd>  Tag more items of that item type
+
+<kbd>⌥</kbd><kbd>↵</kbd>  Remove items of that item type
+
+<kbd>⌃</kbd><kbd>↵</kbd>  Open all items of that item type
+
 ### Search tagged items
 
+Show complete, flat list of all previously tagged items. Start typing to filter the list by title, tag, & more fields.
 
+ ![image-20250512152357689](assets/image-20250512152357689.png) 
 
+<kbd>↵</kbd>  Open the selected item
 
+<kbd>⌘</kbd><kbd>↵</kbd> Remove the item (untag) from this tag
 
-<kbd>↵</kbd>  
-
-<kbd>⌘</kbd><kbd>↵</kbd> 
-
-<kbd>⌥</kbd><kbd>↵</kbd> 
-
-<kbd>⌃</kbd><kbd>↵</kbd> 
-
-<kbd>⇧</kbd><kbd>↵</kbd> 
-
-
-
+<kbd>⌥</kbd><kbd>↵</kbd> Rename the item (good for applying a note too)
 
 

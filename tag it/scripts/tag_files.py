@@ -63,7 +63,6 @@ for path in paths:
             "type": "file",
             "path": path,
             "name": os.path.basename(path.rstrip("/")),
-            "note": "",
             "uid": str(uuid.uuid4())
         })
         added += 1

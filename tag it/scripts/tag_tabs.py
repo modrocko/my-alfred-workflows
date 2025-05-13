@@ -106,7 +106,6 @@ for item in decoded.split("%%"):
             "type": "bookmark",
             "title": title,
             "url": url,
-            "note": "",
             "uid": str(uuid.uuid4())
         })
         added += 1

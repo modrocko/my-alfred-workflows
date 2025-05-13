@@ -52,7 +52,6 @@ for entry in raw_output.split("%%"):
             "sender": parts[1].strip(),
             "date": parts[2].strip(),
             "id": parts[3].strip(),
-            "note": "",
             "uid": str(uuid.uuid4())
         })
 

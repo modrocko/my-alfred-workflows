@@ -37,7 +37,6 @@ items = []
 for entry in block["items"]:
     item_type = entry.get("type")
     uid = entry.get("uid", "")
-    note = entry.get("note", "")
     subtitle = ""
     title = ""
     arg = ""

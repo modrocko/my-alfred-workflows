@@ -236,6 +236,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B4812E61-A952-47FF-A2A5-F6972448A3A2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C7BA13A3-9C95-46E3-A2EA-2D6C4776F2D7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B6FDE0DC-E5D0-41BB-9BBA-EF3F215DCE41</key>
 		<array>
 			<dict>
@@ -329,6 +342,51 @@
 	<string>Tag It!</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>test</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>test</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B4812E61-A952-47FF-A2A5-F6972448A3A2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/add_note.py "#foobar||some cool note here"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C7BA13A3-9C95-46E3-A2EA-2D6C4776F2D7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -1104,7 +1162,93 @@ if os.path.exists(items_path):
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># Tag It!
+
+Tag emails, files, folders &amp; web pages for easy access later on.
+
+I created this workflow to keep related items together for certain activities — all in one place. Projects, research, orders, favorites, recipes... whatever. I mainly use this for short term stuff. Less so for long-term bookmarks. I can tag, find &amp; open email, files, folders &amp; webpages in a breeze. 
+
+So, to summarize... a consolidated Alfred system to:  
+
+✓  Keep your projects organized  
+✓  Keep your work moving forward  
+✓  Keep your brain sane
+
+Works with: Apple Mail ∙ Apple Finder ∙ Chrome-based browsers
+
+▸ Requires [jq](https://formulae.brew.sh/formula/jq)
+
+## Usage
+
+Easy — just press a bunch of the option keys to start saving, finding &amp; viewing emails, files, folders &amp; browser tabs. 
+
+### Main workflows
+
+![image-20250509211540846](assets/image-20250509211540846.png)  
+
+### Initialize workflow
+
+▸ In *Configure Workflow*: 1) Select browser preference ∙ 2) Select tagging preference for browser window(s)
+
+▸ Initialize the workflow to create the underlying data file *(see below)*
+
+![image-20250509205555344](assets/image-20250509205555344.png) 
+
+&lt;kbd&gt;↵&lt;/kbd&gt;  Initialize the workflow
+
+&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Reset data files (destructive action, will delete all existing data)
+
+### Tag something
+
+Tag emails, files, folders or browser tabs. Keep typing to create new tag or apply filter to specify existing tag.
+
+![image-20250509205651248](assets/image-20250509205651248.png) 
+
+&lt;kbd&gt;↵&lt;/kbd&gt;  Tag all selected emails in Apple Mail window
+
+&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Tag all selected files in front-most Finder window
+
+&lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Tag all browser tabs as per preference setting
+
+### Show tagged items
+
+From the previous dialog... show all tags containing items for that tag.
+
+![image-20250509221638765](assets/image-20250509221638765.png) 
+
+&lt;kbd&gt;↵&lt;/kbd&gt;  View list of item types for this tag (emails, files &amp; tabs)
+
+&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Rename this tag
+
+&lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Remove this tag &amp; all its tagged items
+
+&lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; View flat list all items for this tag
+
+## Show item types
+
+From the previous dialog... show tagged items, grouped by item type.
+
+![image-20250511163058886](assets/image-20250511163058886.png) 
+
+&lt;kbd&gt;↵&lt;/kbd&gt;  View items for that item type
+
+&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt;  Tag more items of that item type
+
+&lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt;  Remove items of that item type
+
+&lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt;  Open all items of that item type
+
+### Search tagged items
+
+Show complete, flat list of all previously tagged items. Start typing to filter the list by title, tag, &amp; more fields.
+
+ ![image-20250512152357689](assets/image-20250512152357689.png) 
+
+&lt;kbd&gt;↵&lt;/kbd&gt;  Open the selected item
+
+&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Remove the item (untag) from this tag
+
+&lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Rename the item (good for applying a note too)</string>
 	<key>uidata</key>
 	<dict>
 		<key>00D6EDE5-08E7-4738-B709-A0ADE79241FA</key>
@@ -1255,6 +1399,13 @@ if os.path.exists(items_path):
 			<key>ypos</key>
 			<real>70</real>
 		</dict>
+		<key>B4812E61-A952-47FF-A2A5-F6972448A3A2</key>
+		<dict>
+			<key>xpos</key>
+			<real>870</real>
+			<key>ypos</key>
+			<real>35</real>
+		</dict>
 		<key>B6FDE0DC-E5D0-41BB-9BBA-EF3F215DCE41</key>
 		<dict>
 			<key>colorindex</key>
@@ -1272,6 +1423,13 @@ if os.path.exists(items_path):
 			<real>885</real>
 			<key>ypos</key>
 			<real>885</real>
+		</dict>
+		<key>C7BA13A3-9C95-46E3-A2EA-2D6C4776F2D7</key>
+		<dict>
+			<key>xpos</key>
+			<real>1050</real>
+			<key>ypos</key>
+			<real>45</real>
 		</dict>
 		<key>CCA2FA43-8D69-4F63-8569-B553F9C8B1F9</key>
 		<dict>
@@ -1422,7 +1580,7 @@ if os.path.exists(items_path):
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1.1</string>
+	<string>4.1.5</string>
 	<key>webaddress</key>
 	<string>toddsgotapen.com</string>
 </dict>

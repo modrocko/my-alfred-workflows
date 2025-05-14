@@ -17,6 +17,7 @@ with open(items_path, "r") as f:
 
 items = [{
     "title": "Keyboard shortcuts",
+#    "subtitle": "↵ Open • ⌘ Remove item • ⌥ Rename title",
     "subtitle": "↵ Open • ⌘ Remove item • ⌥ Rename title",
     "valid": False,
     "icon": { "path": "icons/info.png" }

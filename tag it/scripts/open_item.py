@@ -31,3 +31,4 @@ elif item_type == "file":
 elif item_type == "bookmark":
     url = entry.get("url", "")
     subprocess.run(["open", url])
+

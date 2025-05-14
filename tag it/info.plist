@@ -98,7 +98,7 @@
 				<key>destinationuid</key>
 				<string>C14E5E27-20CC-4702-9CDF-02F93BE30AA9</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>524288</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -223,6 +223,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>AB8EA87B-2A2B-4380-93E1-FD740E5BE374</key>
+		<array/>
 		<key>B112702C-80D1-4A60-B2D9-3308685B8B1B</key>
 		<array>
 			<dict>
@@ -769,6 +771,30 @@ python3 scripts/list_items_for_tag.py "$1"
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd "$alfred_workflow_directory"
+python3 scripts/rename_tag.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9DC7200D-643A-4990-B761-C80BA6F83B1F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -816,30 +842,6 @@ python3 scripts/list_tags.py "$1"
 			<string>E04820B5-E336-4756-8181-4FE9FC938D3D</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cd "$alfred_workflow_directory"
-python3 scripts/rename_tag.py "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9DC7200D-643A-4990-B761-C80BA6F83B1F</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1580,7 +1582,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>4.1.5</string>
+	<string>4.1.55</string>
 	<key>webaddress</key>
 	<string>toddsgotapen.com</string>
 </dict>

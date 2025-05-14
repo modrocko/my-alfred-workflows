@@ -75,7 +75,9 @@ for item_type, group in counts.items():
         "title": f"{count} {label}",
         "subtitle": f"↵ View • ⌘ Tag {item_type}s • ⌥ Remove {item_type}s • ⌃ Open all {item_type}s",
         "arg": query_tag,
-        "variables": {},
+        "variables": {
+            "item_type": item_type
+        },
         "icon": { "path": icon },
         "mods": {
             "cmd": {

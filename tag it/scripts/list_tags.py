@@ -57,20 +57,12 @@ for block in data:
                 },
                 "alt": {
                     "subtitle": "⌥ Remove tag",
-                    "arg": tag,
-                    "variables": {
-                        "action": "remove"
-                    }
+                    "arg": tag
                 },
                 "ctrl": {
                     "subtitle": "⌃ View items",
-                    "arg": tag,
-                    "variables": {
-                        "tag": tag,
-                        "item_type": "all"
-                    }
+                    "arg": tag
                 }
-
             }
         })
 

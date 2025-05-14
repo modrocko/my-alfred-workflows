@@ -3,7 +3,7 @@ import sys
 import json
 
 # Get incoming values
-query_tag = sys.argv[1].split("||")[-1].strip().replace("!", "❗").lower()
+query_tag = sys.argv[1].split("||")[-1].strip().replace("!", "❗")
 filter_type = os.environ.get("item_type")
 print("filter type:", filter_type, file=sys.stderr)
 

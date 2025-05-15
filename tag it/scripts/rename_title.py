@@ -4,7 +4,6 @@ import json
 import subprocess
 
 # split single arg into parts
-#tag, uid, old_title, new_title = sys.argv[1].split("||")
 tag, uid, old_title, new_title = sys.argv[1].replace("!", "❗").split("||")
 
 print(f"tag={tag}\nuid={uid}\nold_title={old_title}\nnew_title={new_title}", file=sys.stderr)

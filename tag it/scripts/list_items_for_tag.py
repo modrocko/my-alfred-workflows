@@ -78,10 +78,16 @@ for entry in block["items"]:
         "subtitle": subtitle,
         "arg": f"{query_tag}||{uid}",
         "icon": icon,
+        "variables": {
+            "caller": "list_items"
+        },
         "mods": {
             "cmd": {
                 "subtitle": "⌘ Remove item",
-                "arg": f"{query_tag}||{uid}"
+                "arg": f"{query_tag}||{uid}",
+                "variables": {
+                        "caller": "list_items"
+                    }
             },
             "alt": {
                 "subtitle": "⌥ Rename title",
@@ -89,7 +95,8 @@ for entry in block["items"]:
                 "variables": {
                     "tag": query_tag,
                     "uid": uid,
-                    "old_title": title
+                    "old_title": title,
+                    "caller": "list_items"
                 }
               }
             }

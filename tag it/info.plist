@@ -223,6 +223,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9160BDB3-D552-4DF5-AA1B-EFA061FEFDD7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0C11029C-6EA0-4F3A-B2DA-445D04A38860</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9AE61FB2-0B3C-48EB-ADFD-7B296C5FE0AD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E04820B5-E336-4756-8181-4FE9FC938D3D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AB8EA87B-2A2B-4380-93E1-FD740E5BE374</key>
 		<array/>
 		<key>B112702C-80D1-4A60-B2D9-3308685B8B1B</key>
@@ -557,7 +583,10 @@ python3 scripts/remove_items_from_tag.py "$1"</string>
 python3 scripts/remove_item_from_tag.py "$1"
 
 tag="${1%%||*}"
-osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_list_items\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
+caller="${caller}"
+
+# call the right refresh trigger
+osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_${caller}\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -571,6 +600,21 @@ osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_list_items\
 			<string>D7B09CA4-B616-4CE0-ADDF-A0E71AB9D17F</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_search_tags</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>9160BDB3-D552-4DF5-AA1B-EFA061FEFDD7</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -605,7 +649,13 @@ python3 scripts/open_all_items.py "$1"</string>
 				<integer>68</integer>
 				<key>script</key>
 				<string>cd "$alfred_workflow_directory"
-python3 scripts/open_item.py "$1"</string>
+python3 scripts/open_item.py "$1"
+
+tag="${1%%||*}"
+caller="${caller}"
+
+# call the right refresh trigger
+osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_${caller}\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -749,7 +799,7 @@ python3 scripts/list_items_for_tag.py "$1"
 				<key>hotkey</key>
 				<integer>17</integer>
 				<key>hotmod</key>
-				<integer>786432</integer>
+				<integer>262144</integer>
 				<key>hotstring</key>
 				<string>T</string>
 				<key>leftcursor</key>
@@ -775,7 +825,9 @@ python3 scripts/list_items_for_tag.py "$1"
 				<integer>102</integer>
 				<key>script</key>
 				<string>cd "$alfred_workflow_directory"
-python3 scripts/rename_tag.py "$1"</string>
+python3 scripts/rename_tag.py "$1"
+
+osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_list_tags\" in workflow \"com.toddsgotapen.tagit\""</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -882,6 +934,21 @@ python3 scripts/list_tags.py "$1"
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_list_tags</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>9AE61FB2-0B3C-48EB-ADFD-7B296C5FE0AD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -936,7 +1003,10 @@ python3 scripts/delete_tag.py "$1"</string>
 python3 scripts/rename_title.py "$1"
 
 tag="${1%%||*}"
-osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_list_items\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
+caller="${caller}"
+
+# call the right refresh trigger
+osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_${caller}\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -959,7 +1029,10 @@ osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_list_items\
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
-				<dict/>
+				<dict>
+					<key>caller</key>
+					<string>{var:caller}</string>
+				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
@@ -1372,8 +1445,28 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>ypos</key>
 			<real>885</real>
 		</dict>
+		<key>9160BDB3-D552-4DF5-AA1B-EFA061FEFDD7</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>295</real>
+		</dict>
+		<key>9AE61FB2-0B3C-48EB-ADFD-7B296C5FE0AD</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<real>65</real>
+			<key>ypos</key>
+			<real>870</real>
+		</dict>
 		<key>9DC7200D-643A-4990-B761-C80BA6F83B1F</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
 			<key>note</key>
 			<string>rename tag</string>
 			<key>xpos</key>
@@ -1383,6 +1476,8 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 		</dict>
 		<key>AB8EA87B-2A2B-4380-93E1-FD740E5BE374</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
 			<key>note</key>
 			<string>open selected item</string>
 			<key>xpos</key>

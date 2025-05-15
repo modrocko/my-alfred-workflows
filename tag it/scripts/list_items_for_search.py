@@ -64,10 +64,16 @@ for group in tag_groups:
             "subtitle": subtitle,
             "arg": f"{tag}||{uid}",
             "icon": { "path": f"icons/{type_}.png" },
+            "variables": {
+                "caller": "search_tags"
+            },
             "mods": {
                 "cmd": {
                     "subtitle": "⌘ Remove item",
-                    "arg": f"{tag}||{uid}"
+                    "arg": f"{tag}||{uid}",
+                    "variables": {
+                        "caller": "search_tags"
+                    }
                 },
                 "alt": {
                     "subtitle": "⌥ Rename title",
@@ -75,7 +81,8 @@ for group in tag_groups:
                     "variables": {
                         "tag": tag,
                         "uid": uid,
-                        "old_title": label
+                        "old_title": label,
+                        "caller": "search_tags"
                 }
               }
             }

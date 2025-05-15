@@ -349,8 +349,6 @@
 			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>keyword</key>
-				<string>test</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -559,7 +557,7 @@ python3 scripts/remove_items_from_tag.py "$1"</string>
 python3 scripts/remove_item_from_tag.py "$1"
 
 tag="${1%%||*}"
-osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_tags_list\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
+osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_list_items\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -679,7 +677,7 @@ python3 scripts/list_items_for_search.py "$1"
 				<key>availableviaurlhandler</key>
 				<false/>
 				<key>triggerid</key>
-				<string>refresh_tags_list</string>
+				<string>refresh_list_items</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.external</string>
@@ -938,7 +936,7 @@ python3 scripts/delete_tag.py "$1"</string>
 python3 scripts/rename_title.py "$1"
 
 tag="${1%%||*}"
-osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_tags_list\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
+osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_list_items\" in workflow \"com.toddsgotapen.tagit\" with argument \"$tag\""</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1365,6 +1363,8 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 		</dict>
 		<key>62FB1192-961C-440A-975D-BEDFD1F32742</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
 			<key>note</key>
 			<string>rename title</string>
 			<key>xpos</key>
@@ -1444,6 +1444,8 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 		</dict>
 		<key>D7B09CA4-B616-4CE0-ADDF-A0E71AB9D17F</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
 			<key>note</key>
 			<string>remove item from tag</string>
 			<key>xpos</key>

@@ -606,21 +606,6 @@ osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_${caller}\"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>refresh_search_tags</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>9160BDB3-D552-4DF5-AA1B-EFA061FEFDD7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -668,6 +653,21 @@ python3 scripts/list_items_for_search.py "$1"
 			<string>0C11029C-6EA0-4F3A-B2DA-445D04A38860</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_search_tags</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>9160BDB3-D552-4DF5-AA1B-EFA061FEFDD7</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -767,27 +767,6 @@ python3 scripts/list_items_for_tag.py "$1"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>rename tag</string>
-				<key>subtext</key>
-				<string>Rename this tag</string>
-				<key>text</key>
-				<string>Rename tag: {var:old_tag}</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>17B0DFBE-208F-414B-8DA2-B8E9D6F98289</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -861,6 +840,27 @@ python3 scripts/list_tags.py "$1"
 			<string>E04820B5-E336-4756-8181-4FE9FC938D3D</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>rename tag</string>
+				<key>subtext</key>
+				<string>Rename this tag</string>
+				<key>text</key>
+				<string>Rename tag: {var:old_tag}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>17B0DFBE-208F-414B-8DA2-B8E9D6F98289</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1015,6 +1015,27 @@ osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_${caller}\"
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:tag edit</string>
+				<key>subtext</key>
+				<string>↵ Edit data file ∙ ⌘ ↵ Open data folder ∙ ⌥↵ Open workflow folder</string>
+				<key>text</key>
+				<string>Edit data files directly</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>525CCC53-7746-4B83-8850-E244D8A83819</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1066,27 +1087,6 @@ subprocess.run([
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:tag init</string>
-				<key>subtext</key>
-				<string>↵ to intialize workflow ∙ ⌘↵ to reset data files</string>
-				<key>text</key>
-				<string>Initialize (or reset) workflow</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>00D6EDE5-08E7-4738-B709-A0ADE79241FA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1113,18 +1113,18 @@ subprocess.run([
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>:tag edit</string>
+				<string>:tag init</string>
 				<key>subtext</key>
-				<string>↵ Edit data file ∙ ⌘ ↵ Open data folder ∙ ⌥↵ Open workflow folder</string>
+				<string>↵ to intialize workflow ∙ ⌘↵ to reset data files</string>
 				<key>text</key>
-				<string>Edit data files directly</string>
+				<string>Initialize (or reset) workflow</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>525CCC53-7746-4B83-8850-E244D8A83819</string>
+			<string>00D6EDE5-08E7-4738-B709-A0ADE79241FA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1221,15 +1221,19 @@ Easy — just press a bunch of the option keys to start saving, finding &amp; vi
 
 ### Tag something
 
-Tag emails, files, folders or browser tabs. Keep typing to create new tag or apply filter to specify existing tag.
+Tag emails, files, folders or browser tabs. Keep typing to create a new tag. Or select an existing tag.
 
-![image-20250509205651248](assets/image-20250509205651248.png) 
+![image-20250516140908870](assets/image-20250516140908870.png)  
 
 &lt;kbd&gt;↵&lt;/kbd&gt;  Tag all selected emails in Apple Mail window
 
 &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Tag all selected files in front-most Finder window
 
 &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Tag all browser tabs as per preference setting
+
+&lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Tag all selected files in front-most Finder window - but mark them as type `note` ★
+
+&gt;  *★ I added this item type to tag files as a `note` to make it visually easy to see. Keep your project notes or tasks or whatever for any saved tag. Works great — you'll see.*
 
 ### Show tagged items
 
@@ -1263,7 +1267,7 @@ From the previous dialog... show tagged items, grouped by item type.
 
 Show complete, flat list of all previously tagged items. Start typing to filter the list by title, tag, &amp; more fields.
 
- ![image-20250512152357689](assets/image-20250512152357689.png) 
+![image-20250512152357689](assets/image-20250512152357689.png)  
 
 &lt;kbd&gt;↵&lt;/kbd&gt;  Open the selected item
 
@@ -1613,7 +1617,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>4.1.56</string>
+	<string>4.1.57</string>
 	<key>webaddress</key>
 	<string>toddsgotapen.com</string>
 </dict>

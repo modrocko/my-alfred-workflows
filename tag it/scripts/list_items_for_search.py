@@ -51,6 +51,14 @@ for group in tag_groups:
             url = item.get("url", "")
             subtitle_detail = url
 
+        elif type_ == "note":
+            path = item.get("path", "")
+            title = item.get("name") or os.path.basename(path.rstrip("/"))
+            kind = "folder" if os.path.isdir(path) else "note"
+            label = title
+            subtitle_detail = f"[{kind}] • {path}"
+
+
         else:
             continue  # skip unknown types
 

@@ -28,7 +28,8 @@ if not item:
 field = {
     "email": "subject",
     "bookmark": "title",
-    "file": "name"
+    "file": "name",
+    "note": "name"
 }.get(item.get("type"))
 
 if field:

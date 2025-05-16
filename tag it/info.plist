@@ -118,6 +118,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3B79DBBE-65FB-4838-A630-7F460CFF70DA</key>
+		<array/>
 		<key>45A4A40B-A8DA-4F12-8E1C-29F192612474</key>
 		<array>
 			<dict>
@@ -264,19 +266,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B4812E61-A952-47FF-A2A5-F6972448A3A2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C7BA13A3-9C95-46E3-A2EA-2D6C4776F2D7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B6FDE0DC-E5D0-41BB-9BBA-EF3F215DCE41</key>
 		<array>
 			<dict>
@@ -373,49 +362,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>test</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B4812E61-A952-47FF-A2A5-F6972448A3A2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cd "$alfred_workflow_directory"
-python3 scripts/add_note.py "#foobar||some cool note here"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C7BA13A3-9C95-46E3-A2EA-2D6C4776F2D7</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -429,6 +375,8 @@ elif [ "$item_type" = "file" ]; then
   python3 scripts/tag_files.py "$1"
 elif [ "$item_type" = "bookmark" ]; then
   python3 scripts/tag_tabs.py "$1"
+elif [ "$item_type" = "note" ]; then
+  python3 scripts/tag_notes.py "$1"
 else
   echo "Unknown item_type: $item_type" &gt;&amp;2
   exit 1
@@ -604,21 +552,6 @@ osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_${caller}\"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>refresh_search_tags</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>9160BDB3-D552-4DF5-AA1B-EFA061FEFDD7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -669,6 +602,21 @@ osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_${caller}\"
 			<string>AB8EA87B-2A2B-4380-93E1-FD740E5BE374</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>refresh_search_tags</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>9160BDB3-D552-4DF5-AA1B-EFA061FEFDD7</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -819,6 +767,27 @@ python3 scripts/list_items_for_tag.py "$1"
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>rename tag</string>
+				<key>subtext</key>
+				<string>Rename this tag</string>
+				<key>text</key>
+				<string>Rename tag: {var:old_tag}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>17B0DFBE-208F-414B-8DA2-B8E9D6F98289</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -892,27 +861,6 @@ python3 scripts/list_tags.py "$1"
 			<string>E04820B5-E336-4756-8181-4FE9FC938D3D</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>rename tag</string>
-				<key>subtext</key>
-				<string>Rename this tag</string>
-				<key>text</key>
-				<string>Rename tag: {var:old_tag}</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>17B0DFBE-208F-414B-8DA2-B8E9D6F98289</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1067,27 +1015,6 @@ osascript -e "tell application \"Alfred 5\" to run trigger \"refresh_${caller}\"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:tag edit</string>
-				<key>subtext</key>
-				<string>↵ Edit data file ∙ ⌘ ↵ Open data folder ∙ ⌥↵ Open workflow folder</string>
-				<key>text</key>
-				<string>Edit data files directly</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>525CCC53-7746-4B83-8850-E244D8A83819</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1139,6 +1066,27 @@ subprocess.run([
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:tag init</string>
+				<key>subtext</key>
+				<string>↵ to intialize workflow ∙ ⌘↵ to reset data files</string>
+				<key>text</key>
+				<string>Initialize (or reset) workflow</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>00D6EDE5-08E7-4738-B709-A0ADE79241FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1165,18 +1113,18 @@ subprocess.run([
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>:tag init</string>
+				<string>:tag edit</string>
 				<key>subtext</key>
-				<string>↵ to intialize workflow ∙ ⌘↵ to reset data files</string>
+				<string>↵ Edit data file ∙ ⌘ ↵ Open data folder ∙ ⌥↵ Open workflow folder</string>
 				<key>text</key>
-				<string>Initialize (or reset) workflow</string>
+				<string>Edit data files directly</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>00D6EDE5-08E7-4738-B709-A0ADE79241FA</string>
+			<string>525CCC53-7746-4B83-8850-E244D8A83819</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1342,7 +1290,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>list tag groups</string>
 			<key>xpos</key>
-			<real>365</real>
+			<real>515</real>
 			<key>ypos</key>
 			<real>210</real>
 		</dict>
@@ -1353,7 +1301,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>search tags</string>
 			<key>xpos</key>
-			<real>175</real>
+			<real>325</real>
 			<key>ypos</key>
 			<real>465</real>
 		</dict>
@@ -1362,7 +1310,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>rename tag prompt</string>
 			<key>xpos</key>
-			<real>660</real>
+			<real>810</real>
 			<key>ypos</key>
 			<real>720</real>
 		</dict>
@@ -1371,7 +1319,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>open all items</string>
 			<key>xpos</key>
-			<real>655</real>
+			<real>805</real>
 			<key>ypos</key>
 			<real>365</real>
 		</dict>
@@ -1380,7 +1328,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>tag items</string>
 			<key>xpos</key>
-			<real>655</real>
+			<real>805</real>
 			<key>ypos</key>
 			<real>55</real>
 		</dict>
@@ -1389,7 +1337,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>delete tag</string>
 			<key>xpos</key>
-			<real>660</real>
+			<real>810</real>
 			<key>ypos</key>
 			<real>885</real>
 		</dict>
@@ -1400,23 +1348,23 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>list items for tag</string>
 			<key>xpos</key>
-			<real>655</real>
+			<real>805</real>
 			<key>ypos</key>
 			<real>540</real>
 		</dict>
 		<key>4C6184CB-F717-480D-86DD-6050571026A3</key>
 		<dict>
 			<key>xpos</key>
-			<real>815</real>
+			<real>965</real>
 			<key>ypos</key>
 			<real>750</real>
 		</dict>
 		<key>51100120-8934-4147-8F61-66981D1FE39B</key>
 		<dict>
 			<key>xpos</key>
-			<real>40</real>
+			<real>135</real>
 			<key>ypos</key>
-			<real>605</real>
+			<real>625</real>
 		</dict>
 		<key>525CCC53-7746-4B83-8850-E244D8A83819</key>
 		<dict>
@@ -1430,7 +1378,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 		<key>6060256D-76A0-46B7-A54D-FB318D145A96</key>
 		<dict>
 			<key>xpos</key>
-			<real>1045</real>
+			<real>1195</real>
 			<key>ypos</key>
 			<real>915</real>
 		</dict>
@@ -1441,7 +1389,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>rename title</string>
 			<key>xpos</key>
-			<real>1120</real>
+			<real>1270</real>
 			<key>ypos</key>
 			<real>885</real>
 		</dict>
@@ -1450,18 +1398,18 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<real>60</real>
+			<real>135</real>
 			<key>ypos</key>
-			<real>295</real>
+			<real>465</real>
 		</dict>
 		<key>9AE61FB2-0B3C-48EB-ADFD-7B296C5FE0AD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<real>65</real>
+			<real>140</real>
 			<key>ypos</key>
-			<real>870</real>
+			<real>800</real>
 		</dict>
 		<key>9DC7200D-643A-4990-B761-C80BA6F83B1F</key>
 		<dict>
@@ -1470,7 +1418,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>rename tag</string>
 			<key>xpos</key>
-			<real>885</real>
+			<real>1035</real>
 			<key>ypos</key>
 			<real>720</real>
 		</dict>
@@ -1481,7 +1429,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>open selected item</string>
 			<key>xpos</key>
-			<real>895</real>
+			<real>1045</real>
 			<key>ypos</key>
 			<real>445</real>
 		</dict>
@@ -1492,23 +1440,16 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>specify tag</string>
 			<key>xpos</key>
-			<real>175</real>
+			<real>325</real>
 			<key>ypos</key>
 			<real>70</real>
-		</dict>
-		<key>B4812E61-A952-47FF-A2A5-F6972448A3A2</key>
-		<dict>
-			<key>xpos</key>
-			<real>870</real>
-			<key>ypos</key>
-			<real>35</real>
 		</dict>
 		<key>B6FDE0DC-E5D0-41BB-9BBA-EF3F215DCE41</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<real>360</real>
+			<real>510</real>
 			<key>ypos</key>
 			<real>535</real>
 		</dict>
@@ -1517,16 +1458,9 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>rename title prompt</string>
 			<key>xpos</key>
-			<real>885</real>
+			<real>1035</real>
 			<key>ypos</key>
 			<real>885</real>
-		</dict>
-		<key>C7BA13A3-9C95-46E3-A2EA-2D6C4776F2D7</key>
-		<dict>
-			<key>xpos</key>
-			<real>1050</real>
-			<key>ypos</key>
-			<real>45</real>
 		</dict>
 		<key>CCA2FA43-8D69-4F63-8569-B553F9C8B1F9</key>
 		<dict>
@@ -1544,7 +1478,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>remove item from tag</string>
 			<key>xpos</key>
-			<real>895</real>
+			<real>1045</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
@@ -1573,7 +1507,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>list tags</string>
 			<key>xpos</key>
-			<real>175</real>
+			<real>325</real>
 			<key>ypos</key>
 			<real>720</real>
 		</dict>
@@ -1600,7 +1534,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>note</key>
 			<string>remove items from tag</string>
 			<key>xpos</key>
-			<real>655</real>
+			<real>805</real>
 			<key>ypos</key>
 			<real>210</real>
 		</dict>
@@ -1679,7 +1613,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>4.1.55</string>
+	<string>4.1.56</string>
 	<key>webaddress</key>
 	<string>toddsgotapen.com</string>
 </dict>

@@ -20,7 +20,7 @@ with open(items_path, "r") as f:
 items = []
 for block in data:
     tag = block.get("tag", "")
-    type_counts = { "email": 0, "file": 0, "bookmark": 0 }
+    type_counts = { "email":0, "file":0, "bookmark":0, "note":0 }
 
     for item in block.get("items", []):
         t = item.get("type")
@@ -39,6 +39,9 @@ for block in data:
         type_labels.append(f'{type_counts["bookmark"]} bookmark{"s" if type_counts["bookmark"] > 1 else ""}')
     if type_counts["file"]:
         type_labels.append(f'{type_counts["file"]} file{"s" if type_counts["file"] > 1 else ""}')
+    if type_counts["note"]:
+        type_labels.append(f'{type_counts["note"]} note{"s" if type_counts["note"]>1 else ""}')
+
 
     subtitle = f"[{', '.join(type_labels)}] • ↵ View tag(s) • ⌘ Rename tag • ⌥ Remove tag • ⌃ View items"
 

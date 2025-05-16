@@ -44,6 +44,15 @@ def build_mods(tag):
                 "item_type": "bookmark",
                 "tag": tag
             }
+        },
+        "ctrl": {
+            "valid": True,
+            "arg": tag,
+             "subtitle": "⌃ Tag notes",
+             "variables": {
+                 "item_type": "note",
+                 "tag": tag
+             }
         }
     }
 
@@ -51,7 +60,7 @@ def build_mods(tag):
 if query and query not in tags:
     items.append({
         "title": f"'{query}'",
-        "subtitle": "↵ Tag emails • ⌘ Tag files • ⌥ Tag browser tabs",
+        "subtitle": "↵ Tag emails • ⌘ Tag files • ⌥ Tag browser tabs • ⌃ Tag notes",
         "arg": query,
         "variables": {
             "item_type": "email",
@@ -66,7 +75,7 @@ for tag in tags:
         continue
     items.append({
         "title": tag,
-        "subtitle": "↵ Tag emails • ⌘ Tag files • ⌥ Tag browser tabs",
+        "subtitle": "↵ Tag emails • ⌘ Tag files • ⌥ Tag browser tabs • ⌃ Tag notes",
         "arg": tag,
         "variables": {
             "item_type": "email",

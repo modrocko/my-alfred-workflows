@@ -5,6 +5,7 @@ import json
 # Get incoming values
 query_tag = sys.argv[1].split("||")[-1].strip().replace("!", "❗")
 filter_type = os.environ.get("item_type")
+
 print("filter type:", filter_type, file=sys.stderr)
 
 # Set up paths
@@ -27,13 +28,6 @@ if not block or not block.get("items"):
     exit(0)
 
 items = []
-#items = [{
-#    "title": "Keyboard shortcuts",
-#    "subtitle": "↵ Open • ⌘ Remove item • ⌥ Rename title",
-#    "valid": False,
-#    "icon": { "path": "icons/info.png" }
-#}]
-
 for entry in block["items"]:
     item_type = entry.get("type")
     uid = entry.get("uid", "")
@@ -51,23 +45,27 @@ for entry in block["items"]:
         date = entry.get("date", "")
         message_id = entry.get("id", "")
         subtitle = f"[email] ∙ {sender} • {date}"
-        arg = f"{message_id}||{query_tag}"
-        icon = { "path": os.path.join(workflow_dir_root, "icons/email.png") }
+        icon = { "path": "icons/email.png" }
 
     elif item_type == "file":
         path = entry.get("path", "")
         title = entry.get("name") or os.path.basename(path.rstrip("/"))
         kind = "folder" if os.path.isdir(path) else "file"
         subtitle = f"[{kind}] • {path}"
-        arg = f"{path}||{query_tag}"
         icon = { "path": "icons/file.png" }
 
     elif item_type == "bookmark":
         title = entry.get("title", entry.get("url", ""))
         url = entry.get("url", "")
         subtitle = f"[bookmark] • {url}"
-        arg = f"{url}||{query_tag}"
-        icon = { "path": os.path.join(workflow_dir_root, "icons/bookmark.png") }
+        icon = { "path": "icons/bookmark.png" }
+
+    elif item_type == "note":
+        path = entry.get("path", "")
+        title = entry.get("name") or os.path.basename(path.rstrip("/"))
+        kind = "folder" if os.path.isdir(path) else "note"
+        subtitle = f"[{kind}] • {path}"
+        icon = { "path": "icons/note.png" }
 
     else:
         continue  # Skip unknown types
@@ -86,8 +84,8 @@ for entry in block["items"]:
                 "subtitle": "⌘ Remove item",
                 "arg": f"{query_tag}||{uid}",
                 "variables": {
-                        "caller": "list_items"
-                    }
+                    "caller": "list_items"
+                }
             },
             "alt": {
                 "subtitle": "⌥ Rename title",

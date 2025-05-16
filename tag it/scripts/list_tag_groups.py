@@ -25,7 +25,8 @@ if not block or not block.get("items"):
 counts = {
     "email": [],
     "bookmark": [],
-    "file": []
+    "file": [],
+    "note": []
 }
 
 for item in block["items"]:
@@ -35,32 +36,29 @@ for item in block["items"]:
 
 # Build output list
 items = []
-
-# Only show "View all items" if more than one item type exists
-group_count = sum(1 for g in counts.values() if g)
-
-if group_count > 1:
-    items.append({
-        "title": "↵ View all items",
-        "subtitle": f"{query_tag}",
-        "arg": query_tag,
-        "variables": {
-            "item_type": "all",
-            "tag": query_tag
-        }
-    })
+items.append({
+    "title": "View all items",
+    "subtitle": f"{query_tag}",
+    "arg": query_tag,
+    "variables": {
+        "item_type": "all",
+        "tag": query_tag
+    }
+})
 
 # Mapping per type
 labels = {
     "email": "Emails",
     "bookmark": "Bookmarks",
-    "file": "Files"
+    "file": "Files",
+    "note": "Notes"
 }
 
 icons = {
     "email": "icons/email.png",
     "bookmark": "icons/bookmark.png",
-    "file": "icons/file.png"
+    "file": "icons/file.png",
+    "note": "icons/note.png"
 }
 
 for item_type, group in counts.items():
@@ -85,7 +83,8 @@ for item_type, group in counts.items():
                 "arg": query_tag,
                 "variables": {
                     "item_type": item_type,
-                    "tag": query_tag
+                    "tag": query_tag,
+                    "variables":{ "action":"tag_items" }
                 }
             },
             "alt": {

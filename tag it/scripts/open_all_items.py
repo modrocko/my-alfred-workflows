@@ -43,3 +43,9 @@ for item in block.get("items", []):
         if message_id:
             encoded = urllib.parse.quote(f"<{message_id}>")
             subprocess.run(["open", f"message://{encoded}"])
+
+    elif item_type == "note":
+        path = item.get("path")
+        if path and os.path.exists(path):
+            subprocess.run(["open", path])
+

@@ -64,10 +64,10 @@ for entry in block["items"]:
         icon = { "path": "icons/bookmark.png" }
 
     elif item_type == "note":
+        path = entry.get("path", "")
         title = entry.get("name") or os.path.basename(path.rstrip("/"))
         kind = "folder" if os.path.isdir(path) else "note"
         subtitle = f"[{kind}] • {path}"
-        path = entry.get("path", "")
         icon = { "path": "icons/note.png" }
 
     else:

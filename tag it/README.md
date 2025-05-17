@@ -38,17 +38,13 @@ Easy — just press a bunch of the option keys to start saving, finding & viewin
 
 Tag emails, files, folders or browser tabs. Keep typing to create a new tag. Or select an existing tag.
 
-![image-20250516140908870](assets/image-20250516140908870.png)  
+![image-20250517072635828](assets/image-20250517072635828.png)   
 
 <kbd>↵</kbd>  Tag all selected emails in Apple Mail window
 
 <kbd>⌘</kbd><kbd>↵</kbd> Tag all selected files in front-most Finder window
 
 <kbd>⌥</kbd><kbd>↵</kbd> Tag all browser tabs as per preference setting
-
-<kbd>⌃</kbd><kbd>↵</kbd> Tag all selected files in front-most Finder window - but mark them as type `note` ★
-
->  *★ I added this item type to tag files as a `note` to make it visually easy to see. Keep your project notes or tasks or whatever for any saved tag. Works great — you'll see.*
 
 ### Show tagged items
 

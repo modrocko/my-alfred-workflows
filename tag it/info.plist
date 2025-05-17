@@ -375,8 +375,6 @@ elif [ "$item_type" = "file" ]; then
   python3 scripts/tag_files.py "$1"
 elif [ "$item_type" = "bookmark" ]; then
   python3 scripts/tag_tabs.py "$1"
-elif [ "$item_type" = "note" ]; then
-  python3 scripts/tag_notes.py "$1"
 else
   echo "Unknown item_type: $item_type" &gt;&amp;2
   exit 1

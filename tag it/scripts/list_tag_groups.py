@@ -25,8 +25,7 @@ if not block or not block.get("items"):
 counts = {
     "email": [],
     "bookmark": [],
-    "file": [],
-    "note": []
+    "file": []
 }
 
 for item in block["items"]:
@@ -50,15 +49,13 @@ items.append({
 labels = {
     "email": "Emails",
     "bookmark": "Bookmarks",
-    "file": "Files",
-    "note": "Notes"
+    "file": "Files"
 }
 
 icons = {
     "email": "icons/email.png",
     "bookmark": "icons/bookmark.png",
-    "file": "icons/file.png",
-    "note": "icons/note.png"
+    "file": "icons/file.png"
 }
 
 for item_type, group in counts.items():

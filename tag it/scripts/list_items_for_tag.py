@@ -45,7 +45,7 @@ for entry in block["items"]:
         sender = entry.get("sender", "")
         date = entry.get("date", "")
         message_id = entry.get("id", "")
-        subtitle = f"[email] ∙ {sender} • {date}"
+        subtitle = f"{sender} • {date}"
         path = "message://" + urllib.parse.quote(f"<{message_id}>")
         icon = { "path": "icons/email.png" }
 
@@ -53,22 +53,15 @@ for entry in block["items"]:
         path = entry.get("path", "")
         title = entry.get("name") or os.path.basename(path.rstrip("/"))
         kind = "folder" if os.path.isdir(path) else "file"
-        subtitle = f"[{kind}] • {path}"
-        icon = { "path": "icons/file.png" }
+        subtitle = path
+        icon = { "path": path, "type": "fileicon" }
 
     elif item_type == "bookmark":
         title = entry.get("title", entry.get("url", ""))
         url = entry.get("url", "")
-        subtitle = f"[bookmark] • {url}"
+        subtitle = url
         path = url
         icon = { "path": "icons/bookmark.png" }
-
-    elif item_type == "note":
-        path = entry.get("path", "")
-        title = entry.get("name") or os.path.basename(path.rstrip("/"))
-        kind = "folder" if os.path.isdir(path) else "note"
-        subtitle = f"[{kind}] • {path}"
-        icon = { "path": "icons/note.png" }
 
     else:
         continue  # Skip unknown types

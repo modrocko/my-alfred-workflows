@@ -18,7 +18,6 @@ with open(items_path, "r") as f:
 
 items = [{
     "title": "Keyboard shortcuts",
-#    "subtitle": "↵ Open • ⌘ Remove item • ⌥ Rename title",
     "subtitle": "↵ Open • ⌘ Remove item • ⌥ Rename title",
     "valid": False,
     "icon": { "path": "icons/info.png" }
@@ -33,13 +32,14 @@ for group in tag_groups:
         subtitle_detail = ""
         arg = ""
         uid = item.get("uid", "")
+        icon = {}
 
         if type_ == "file":
             path = item.get("path", "")
             title = item.get("name") or os.path.basename(path.rstrip("/"))
-            kind = "folder" if os.path.isdir(path) else "file"
             label = title
-            subtitle_detail = f"[{kind}] • {path}"
+            subtitle_detail = path
+            icon = { "path": path, "type": "fileicon" }
 
         elif type_ == "email":
             label = item.get("subject", "")
@@ -48,19 +48,14 @@ for group in tag_groups:
             subtitle_detail = f"{sender} • {date}"
             message_id = item.get("id", "")
             path = "message://" + urllib.parse.quote(f"<{message_id}>")
+            icon = { "path": "icons/email.png" }
 
         elif type_ == "bookmark":
             label = item.get("title") or item.get("url", "")
             url = item.get("url", "")
             subtitle_detail = url
             path = url
-
-        elif type_ == "note":
-            path = item.get("path", "")
-            title = item.get("name") or os.path.basename(path.rstrip("/"))
-            kind = "folder" if os.path.isdir(path) else "note"
-            label = title
-            subtitle_detail = f"[{kind}] • {path}"
+            icon = { "path": "icons/bookmark.png" }
 
         else:
             continue  # skip unknown types
@@ -74,7 +69,7 @@ for group in tag_groups:
             "title": label,
             "subtitle": subtitle,
             "arg": path,
-            "icon": { "path": f"icons/{type_}.png" },
+            "icon": icon,
             "variables": {
                 "tag": tag,
                 "uid": uid,

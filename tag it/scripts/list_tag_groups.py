@@ -54,7 +54,7 @@ labels = {
 }
 
 icons = {
-  "email": { "path": "icons/email.png" },
+  "email": { "path": "/System/Applications/Mail.app", "type": "fileicon"},
   "bookmark": get_bookmark_icon(),
   "file":  { "path": "icons/file.png" }
 }

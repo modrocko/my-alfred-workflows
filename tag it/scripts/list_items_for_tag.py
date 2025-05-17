@@ -50,7 +50,7 @@ for entry in block["items"]:
         message_id = entry.get("id", "")
         subtitle = f"{sender} • {date}"
         path = "message://" + urllib.parse.quote(f"<{message_id}>")
-        icon = { "path": "icons/email.png" }
+        icon = {"path": "/System/Applications/Mail.app", "type": "fileicon"}
 
     elif item_type == "file":
         path = entry.get("path", "")

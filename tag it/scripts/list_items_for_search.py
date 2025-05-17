@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import urllib.parse
 
 query = sys.argv[1].strip().replace("!", "❗").lower() if len(sys.argv) > 1 else ""
 print(f"QUERY: {query}", file=sys.stderr)
@@ -45,11 +46,14 @@ for group in tag_groups:
             sender = item.get("sender", "")
             date = item.get("date", "")
             subtitle_detail = f"{sender} • {date}"
+            message_id = item.get("id", "")
+            path = "message://" + urllib.parse.quote(f"<{message_id}>")
 
         elif type_ == "bookmark":
             label = item.get("title") or item.get("url", "")
             url = item.get("url", "")
             subtitle_detail = url
+            path = url
 
         elif type_ == "note":
             path = item.get("path", "")
@@ -57,7 +61,6 @@ for group in tag_groups:
             kind = "folder" if os.path.isdir(path) else "note"
             label = title
             subtitle_detail = f"[{kind}] • {path}"
-
 
         else:
             continue  # skip unknown types
@@ -70,9 +73,11 @@ for group in tag_groups:
         items.append({
             "title": label,
             "subtitle": subtitle,
-            "arg": f"{tag}||{uid}",
+            "arg": path,
             "icon": { "path": f"icons/{type_}.png" },
             "variables": {
+                "tag": tag,
+                "uid": uid,
                 "caller": "search_tags"
             },
             "mods": {

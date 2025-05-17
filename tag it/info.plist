@@ -584,7 +584,6 @@ python3 scripts/open_all_items.py "$1"</string>
 				<string>cd "$alfred_workflow_directory"
 python3 scripts/open_item.py "$1"
 
-tag="${1%%||*}"
 caller="${caller}"
 
 # call the right refresh trigger
@@ -1617,7 +1616,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>4.1.57</string>
+	<string>4.1.58</string>
 	<key>webaddress</key>
 	<string>toddsgotapen.com</string>
 </dict>

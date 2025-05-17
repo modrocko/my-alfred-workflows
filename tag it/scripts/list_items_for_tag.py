@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import urllib.parse
 
 # Get incoming values
 query_tag = sys.argv[1].split("||")[-1].strip().replace("!", "❗")
@@ -45,6 +46,7 @@ for entry in block["items"]:
         date = entry.get("date", "")
         message_id = entry.get("id", "")
         subtitle = f"[email] ∙ {sender} • {date}"
+        path = "message://" + urllib.parse.quote(f"<{message_id}>")
         icon = { "path": "icons/email.png" }
 
     elif item_type == "file":
@@ -58,13 +60,14 @@ for entry in block["items"]:
         title = entry.get("title", entry.get("url", ""))
         url = entry.get("url", "")
         subtitle = f"[bookmark] • {url}"
+        path = url
         icon = { "path": "icons/bookmark.png" }
 
     elif item_type == "note":
-        path = entry.get("path", "")
         title = entry.get("name") or os.path.basename(path.rstrip("/"))
         kind = "folder" if os.path.isdir(path) else "note"
         subtitle = f"[{kind}] • {path}"
+        path = entry.get("path", "")
         icon = { "path": "icons/note.png" }
 
     else:
@@ -74,9 +77,11 @@ for entry in block["items"]:
         "uid": uid,
         "title": title,
         "subtitle": subtitle,
-        "arg": f"{query_tag}||{uid}",
+        "arg": path,
         "icon": icon,
         "variables": {
+            "tag": query_tag,
+            "uid": uid,
             "caller": "list_items"
         },
         "mods": {

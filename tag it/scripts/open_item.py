@@ -5,8 +5,11 @@ import subprocess
 import urllib.parse
 
 # get tag & uid from $1
-tag, uid = sys.argv[1].strip().split("||")
-print(f"tag={tag}\nuid={uid}", file=sys.stderr)
+#tag, uid = sys.argv[1].strip().split("||")
+#print(f"tag={tag}\nuid={uid}", file=sys.stderr)
+
+tag=os.environ["tag"]
+uid=os.environ["uid"]
 
 # load items.json
 data_path = os.path.join(os.environ["alfred_workflow_data"], "items.json")

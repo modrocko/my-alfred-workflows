@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import urllib.parse
+from utils import get_bookmark_icon
 
 query = sys.argv[1].strip().replace("!", "❗").lower() if len(sys.argv) > 1 else ""
 print(f"QUERY: {query}", file=sys.stderr)
@@ -22,6 +23,8 @@ items = [{
     "valid": False,
     "icon": { "path": "icons/info.png" }
 }]
+
+bookmark_icon = get_bookmark_icon()
 
 for group in tag_groups:
     tag = group.get("tag", "")
@@ -48,14 +51,15 @@ for group in tag_groups:
             subtitle_detail = f"{sender} • {date}"
             message_id = item.get("id", "")
             path = "message://" + urllib.parse.quote(f"<{message_id}>")
-            icon = { "path": "icons/email.png" }
+            icon = {"path": "/System/Applications/Mail.app", "type": "fileicon"}
 
         elif type_ == "bookmark":
             label = item.get("title") or item.get("url", "")
             url = item.get("url", "")
             subtitle_detail = url
             path = url
-            icon = { "path": "icons/bookmark.png" }
+            #icon = { "path": "icons/bookmark.png" }
+            icon = bookmark_icon
 
         else:
             continue  # skip unknown types

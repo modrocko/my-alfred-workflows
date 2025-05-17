@@ -36,7 +36,8 @@ for item in block.get("items", []):
     elif item_type == "bookmark":
         url = item.get("url")
         if url:
-            subprocess.run(["open", url])
+            browser = os.environ.get("browser", "Safari")
+            subprocess.run(["open", "-a", browser, url])
 
     elif item_type == "email":
         message_id = item.get("id")

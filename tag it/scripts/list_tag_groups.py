@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+from utils import get_bookmark_icon
 
 query_tag = sys.argv[1].strip().replace("!", "❗")
 
@@ -53,9 +54,9 @@ labels = {
 }
 
 icons = {
-    "email": "icons/email.png",
-    "bookmark": "icons/bookmark.png",
-    "file": "icons/file.png"
+  "email": { "path": "icons/email.png" },
+  "bookmark": get_bookmark_icon(),
+  "file":  { "path": "icons/file.png" }
 }
 
 for item_type, group in counts.items():
@@ -73,7 +74,7 @@ for item_type, group in counts.items():
         "variables": {
             "item_type": item_type
         },
-        "icon": { "path": icon },
+        "icon": icon,
         "mods": {
             "cmd": {
                 "subtitle": "⌘ Tag new items",

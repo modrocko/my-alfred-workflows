@@ -1542,7 +1542,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>Brave Browser</string>
+				<string>Google Chrome</string>
 				<key>pairs</key>
 				<array>
 					<array>
@@ -1555,15 +1555,15 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 					</array>
 					<array>
 						<string>Safari</string>
-						<string>Safari Browser</string>
+						<string>Safari</string>
 					</array>
 					<array>
 						<string>Arc</string>
-						<string>Arc Browser</string>
+						<string>Arc</string>
 					</array>
 					<array>
 						<string>Edge</string>
-						<string>Microsoft Edge Browser</string>
+						<string>Microsoft Edge</string>
 					</array>
 				</array>
 			</dict>
@@ -1607,8 +1607,6 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 			<string>tag_scope</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>4.1.60</string>
 	<key>webaddress</key>

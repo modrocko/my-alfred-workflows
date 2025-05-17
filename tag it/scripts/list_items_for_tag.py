@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import urllib.parse
+from utils import get_bookmark_icon
 
 # Get incoming values
 query_tag = sys.argv[1].split("||")[-1].strip().replace("!", "❗")
@@ -13,6 +14,8 @@ print("filter type:", filter_type, file=sys.stderr)
 workflow_dir = os.environ["alfred_workflow_data"]
 items_path = os.path.join(workflow_dir, "items.json")
 workflow_dir_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+bookmark_icon = get_bookmark_icon()
 
 # Load tagged data
 if not os.path.exists(items_path):
@@ -56,12 +59,14 @@ for entry in block["items"]:
         subtitle = path
         icon = { "path": path, "type": "fileicon" }
 
+
     elif item_type == "bookmark":
-        title = entry.get("title", entry.get("url", ""))
-        url = entry.get("url", "")
-        subtitle = url
-        path = url
-        icon = { "path": "icons/bookmark.png" }
+        title   = entry.get("title", entry.get("url", ""))
+        url     = entry.get("url", "")
+        subtitle= url
+        path    = url
+        #icon = { "path": "icons/bookmark.png" }
+        icon = bookmark_icon
 
     else:
         continue  # Skip unknown types

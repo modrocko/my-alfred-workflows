@@ -1220,17 +1220,13 @@ Easy — just press a bunch of the option keys to start saving, finding &amp; vi
 
 Tag emails, files, folders or browser tabs. Keep typing to create a new tag. Or select an existing tag.
 
-![image-20250516140908870](assets/image-20250516140908870.png)  
+![image-20250517072635828](assets/image-20250517072635828.png)   
 
 &lt;kbd&gt;↵&lt;/kbd&gt;  Tag all selected emails in Apple Mail window
 
 &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Tag all selected files in front-most Finder window
 
 &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Tag all browser tabs as per preference setting
-
-&lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↵&lt;/kbd&gt; Tag all selected files in front-most Finder window - but mark them as type `note` ★
-
-&gt;  *★ I added this item type to tag files as a `note` to make it visually easy to see. Keep your project notes or tasks or whatever for any saved tag. Works great — you'll see.*
 
 ### Show tagged items
 
@@ -1264,7 +1260,7 @@ From the previous dialog... show tagged items, grouped by item type.
 
 Show complete, flat list of all previously tagged items. Start typing to filter the list by title, tag, &amp; more fields.
 
-![image-20250512152357689](assets/image-20250512152357689.png)  
+ ![image-20250512152357689](assets/image-20250512152357689.png) 
 
 &lt;kbd&gt;↵&lt;/kbd&gt;  Open the selected item
 
@@ -1614,7 +1610,7 @@ Show complete, flat list of all previously tagged items. Start typing to filter 
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>4.1.59</string>
+	<string>4.1.60</string>
 	<key>webaddress</key>
 	<string>toddsgotapen.com</string>
 </dict>
